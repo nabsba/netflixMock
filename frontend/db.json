@@ -1,0 +1,1261 @@
+{
+	"inscription": {
+		"state": true,
+		"data": null,
+		"error": "",
+		"serverError": false,
+		"errorMessage": "",
+		"errorCodeSql": ""
+	},
+	"login": {
+		"state": true,
+		"data": {
+			"user": {
+				"id": 211228,
+				"name": "nabil",
+				"email": "j.sba@outlook.com"
+			},
+			"dashboard": {
+				"message": {
+					"state": true,
+					"data": {
+						"room": {
+							"roomID": 1,
+							"user1": {
+								"name": "Nabil",
+								"img": {
+									"category": "users",
+									"name": "nabil"
+								},
+								"userID": 211228
+							},
+							"user2": {
+								"name": "Rahma",
+								"img": {
+									"category": "users",
+									"name": "nabil"
+								},
+								"userID": 211229
+							},
+							"messages": [ {
+									"name": "nabil",
+									"message": 323,
+									"messageID": 12,
+									"userID": 211228
+								},
+								{
+									"name": "rahma",
+									"message": 323,
+									"messageID": 12,
+									"userID": 211229
+								},
+								{
+									"name": "nabil",
+									"message": "dsd",
+									"messageID": 12,
+									"userID": 211228
+								},
+								{
+									"name": "rahma",
+									"message": 323,
+									"messageID": 12,
+									"userID": 211229
+								}
+							]
+						},
+						"users": [ {
+								"name": "Amjade",
+								"img": {
+									"category": "users",
+									"name": "nabil",
+									"alt": "user picture"
+								},
+								"userID": "1221",
+								"online": true
+							},
+							{
+								"name": "rahma",
+								"img": {
+									"category": "users",
+									"name": "nabil",
+									"alt": "user picture"
+								},
+								"userID": "1222",
+								"online": true
+							},
+							{
+								"name": "Ismael",
+								"img": {
+									"category": "users",
+									"name": "Ismael",
+									"alt": "user picture"
+								},
+								"userID": "1223",
+								"online": true
+							}
+						]
+
+					}
+				},
+				"certificate": {
+					"state": true,
+					"data": null,
+					"error": "",
+					"serverError": false,
+					"errorMessage": "",
+					"errorCodeSql": ""
+				},
+				"course": {
+					"state": true,
+					"data": {
+						"list": [ {
+								"type": "local",
+								"name": "nabil",
+								"link": "video/aet/special.mp4",
+								"date": "12/02/23"
+							},
+							{
+								"type": "local",
+								"name": "Amjade",
+								"link": "video/aet/special.mp4",
+								"date": "12/02/23"
+							},
+							{
+								"type": "local",
+								"name": "Amjade",
+								"link": "video/aet/special.mp4",
+								"date": "12/02/23"
+							}
+						]
+					}
+				},
+				"portfolio": {
+					"state": true,
+					"data": null,
+					"error": "",
+					"serverError": false,
+					"errorMessage": "",
+					"errorCodeSql": ""
+				},
+				"home": {
+					"state": true,
+					"data": {
+						"progression": "80%",
+						"article": [ {
+								"paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+								"link": {
+									"href": "ewe",
+									"text": "dsd"
+								},
+								"image": {
+									"category": "header",
+									"name": "header1",
+									"alt": "helllo my friend"
+								}
+							},
+							{
+								"paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+								"link": {
+									"href": "ewe",
+									"text": "dsd"
+								},
+								"image": {
+									"category": "header",
+									"name": "header1",
+									"alt": "helllo my friend"
+								}
+							}
+						],
+						"tutorMessage": {
+							"image": {
+								"category": "testimorial",
+								"name": "nabil",
+								"alt": "helllo my friend"
+							},
+							"message": [ {
+									"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+									"date": "22/06/2020",
+									"time": "04h00"
+								},
+								{
+									"text": "nab",
+									"date": "22/06/2020",
+									"time": "04h00"
+								},
+								{
+									"text": "assalam",
+									"date": "22/06/2021",
+									"time": "04h00"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		"error": "",
+		"serverError": false,
+		"errorMessage": "",
+		"errorCodeSql": ""
+	},
+	"logout": {
+		"state": true,
+		"data": {},
+		"error": "",
+		"serverError": false,
+		"errorMessage": "",
+		"errorCodeSql": ""
+	},
+	"contact": {
+		"state": true,
+		"data": null,
+		"error": "",
+		"serverError": false,
+		"errorMessage": "",
+		"errorCodeSql": ""
+	},
+	"admin": {
+		"state": true,
+		"data": {			"home": {
+			"article": [ {
+			"id": 334,
+			"type": "article",
+			"navLink": {
+				"text": "more",
+				"href": "/course/aet"
+			},
+			"title": "Award Education and training (L3)",
+			"short": "aet",
+			"paragraph": "This course is suitable for anyone who is thinking to start a career in teaching. You do not need to be teaching or have any experience in teaching to undertake this qualification.",
+			"image": {
+				"name": "Screenshot2021-04-01at19.13.47.png",
+				"alt": "description"
+			}
+		}, {
+			"id": "d22o0cmd",
+			"type": "article",
+			"navLink": {
+				"text": "more",
+				"href": "/course/cet"
+			},
+			"title": "Certificate Education and training (L4)",
+			"short": "cet",
+			"paragraph": "If you have experience in teaching or are in a teaching position but have no qualifications the certificate in education and training is the starting point of your career.",
+			"image": {
+				"name": "Screenshot2021-04-01at19.13.47.png",
+				"alt": "description"
+			}
+		}, {
+			"id": "d22oddkdk90cmd",
+			"type": "article",
+			"navLink": {
+				"text": "more",
+				"href": "/course/det"
+			},
+			"title": "Diploma education and training (L5)",
+			"short": "det",
+			"paragraph": "This course is suitable for anyone who is thinking to start a career in teaching. You do not need to be teaching or have any experience in teaching to undertake this qualification.",
+			"image": {
+				"name": "Screenshot2021-04-01at19.13.47.png",
+				"alt": "description"
+			}
+		}, {
+			"id": "fvjdkdk90cmd",
+			"type": "article",
+			"navLink": {
+				"text": "more",
+				"href": "/course/qtls"
+			},
+			"title": "QTLS",
+			"short": "qtls",
+			"paragraph": "The QTLS status -Qualified Teacher Learning and Skills- is the achievement of your teaching pathway. After completing this formation you will be considered as a fully qualified teacher.",
+			"image": {
+				"name": "Screenshot2021-04-01at19.13.47.png",
+				"alt": "description"
+			}
+		} ],
+				"header": [ {
+					"id": 19,
+					"type": "header",
+					"title": "bingo",
+					"image_1": {
+								"name": "Screenshot2021-04-01at19.13.47.png",
+								"alt": "description"
+							},
+					"image_2": {
+								"name": "Screenshot2021-04-01at19.13.47.png",
+								"alt": "description"
+							}
+
+				} ]
+			},
+			"course": {
+			"articleDescription": [
+				 {
+					"title":"aet",
+					"type":	"articleDescription",
+					"id": 12288,
+						"description": {
+							"title": "Award Education and Eraining (Level 3)",
+							"image":  {
+								"name": "Screenshot2021-04-01at19.13.47.png",
+								"alt": "description"
+							},
+							"thems": [ {
+									"title": "Where will this course lead?",
+									"content": "This course is for pre-service or in-service teachers who are new to teaching and training or those wishing to teach or train. It is designed as a qualification which will equip a wide range of teachers and facilitators with a threshold license to teach.\tThe course suits those who work, or want to work, as teachers in the post 14 Sector, technicians and support staff in further and adult education, and training personnel in commerce, industry and the public sector. We strongly advice learners who have no experience in teaching to undertake this course first to ensure the basic knowledge is understood and mastered."
+								},
+								{
+									"title": "What will I study?",
+									"content": "The course introduces you to the key principles of delivering learning, including:",
+									"list": [
+										"Roles and responsibilities of the teacher",
+										"Planning and preparing sessions",
+										"Delivering learning activities",
+										"Assessment of learning"
+									]
+								},
+								{
+									"title": "How will this course be delivered?",
+									"content": "The course is very active and participative, with opportunities for micro teaching with your peers (short teaching sessions) built into the programme. Note: due to the current situation, the college will assess, considering learners preferences, if the course should be delivered face to face or online."
+								},
+								{
+									"title": "How the qualification is assessed ?",
+									"content": "The Level 3 Award in Education and Training is a competence-based qualification which is internally assessed through a portfolio of evidence, which is externally quality assured. "
+								},
+								{
+									"title": "What qualifications will I get?",
+									"content": "Award in Education and Training Level 3 (NCFE)"
+								},
+								{
+									"title": "Benefits and progression opportunities",
+									"content": "The objectives of this qualification are to prepare learners for employment and upport learners to progress to a teaching role within the workplace. Learners who achieve this qualification could progress to NCFE Level 4 Certificate in Education and Training and NCFE Level 5 Diploma in Education and Training"
+								},
+								{
+									"title": "What are the entry requirements?",
+									"content": "There is no formal entry requirement for the course and you do not have to be teaching or training already to join the course. However, teachers in the Lifelong learning sector are expected to have a Level 3 qualification in their own teaching subject and Level 2 Literacy and Numeracy."
+								},
+								{
+									"title": "What else do I need to know?",
+									"content": "If you have a Learning Difficulty or Disability please let us know when you apply. You will be offered support in your interview. If you need help completing your application we can help with this too."
+								}
+							]
+						},
+						"curriculum": {
+							"title": "Eduction And Training level 3",
+							"thems": [ {
+									"title": "Understanding roles, responsibilities and relationships in education and training ",
+									"content": "NO CONTENT"
+								},
+								{
+									"title": "Optional units",
+									"content": "Optional units available for this qualification cover areas such as understanding and using inclusive teaching and learning approaches and assessment in education and training as well as facilitate learning and development for individuals or in groups (please refer to the Qualification Specification for more information."
+								}
+							]
+						},
+						"faq": {
+								"title": "Eduction And Training level 3",
+						   	"thems": [ {
+									"title": "How do I register my interest for this course?",
+									"content": "The easiest and fastest way to show your interest for this course is to fill in the form on the website and submit it. The admin team will get back to you within 72 hours. If you have an enquiry about the course please contact the admin on:admin@thenorthwestcollege.co.uk."
+								},
+								{
+									"title": "Is the AET course funded?",
+									"content": "If by funded you mean government funds then no the AET is not government funded. However if you are already in a placement or working within a school we can contact your school and discuss with your employer to see if they can help you with the cost."
+								},
+								{
+									"title": "How much does the AET cost?",
+									"content": "The AET costs 350£. Instalments are available, please contact the admin for more information on the instalment procedure. "
+								}
+							]
+						},
+						"announcement": {
+							"title": "Eduction And Training level 3",
+							"thems": [ {
+								"title": "The official next dates for the AET",
+								"announcement": "The: 2nd of November 2020, 4th of January 2021, 8th of March 2021, 10th of May 2021 "
+							} ]
+						}
+				},
+{
+  "title": "cet",
+	"id": "32323dsd23",
+	"type": "articleDescription",
+  "description": {
+    "title": "Certificate Education and training (Level 4)",
+ 		"image":  {
+								"name": "Screenshot2021-04-01at19.13.47.png",
+								"alt": "description"
+							},
+    "thems": [
+      {
+        "title": "Where will this course lead?",
+        "content": "The CET Award is comprised of 5 mandatory units:",
+        "list": [
+          "Understanding roles, responsibilities and relationships in education and training",
+          "Planning to Meet the Needs of Learners in Education and Training",
+          "Delivering Education and Training",
+          "Using Resources for Education and Training",
+          "Assessing Learners in Education and Training",
+          "Note: optional units are included and subject to change."
+        ]
+      },
+      {
+        "title": "How will this course be delivered?",
+        "content": "The course consists of classroom-based learning, tutorial support and observation of your teaching practice. You will have the opportunity to explore key educational theories and to link these to your own practice. Your tutor will give you individual support with your assignments and will give you detailed written feedback on your observed teaching sessions. (3 tutor observations lasting for approximately an hour are required)"
+      },
+      {
+        "title": "How will I be assessed?",
+        "content": "Assessment will be by assignments and observation of teaching performance. You will need to complete a Teaching Practice File, 6 written assignments, some of them may be carried out through seminar presentations. If you have done previous courses or qualifications which could be accredited (eg/ PTLLS/ AET), you have an Accreditation of Prior Learning interview with your tutor to identify what evidence can be carried forward."
+      },
+      {
+        "title": "What are the entry requirements?",
+        "content": "You will need to have completed the Award in Education and Training, PTLLS, or an equivalent qualification. Learners who are already in a teaching position may be given a place into this course. You will need to have 30 hours of teaching practice whilst on the course, working with groups or in a one to one context in the post-16 sector. Teachers are expected to have at least a Level 3 qualification in their subject teaching area and you will need to show evidence of this or have appropriate experience and be working towards a Level 3 qualification. You should also have English and Maths qualifications at Level 2 or be willing to work towards these qualifications. You are required to have at least a level 2 functional skills English qualification to access the programme."
+      },
+      {
+        "title": "What else do I need to know?",
+        "content": "You will need to have a subject specialist mentor in the workplace who can observe your teaching. Two mentor observations lasting for approximately an hour are required. If you have Learning Difficulty or Disability please let us know when you apply. You will be offered support in your interview. If you need help completing your application we can help with this too. Please note that when you enrol you are accepting that the course content and module descriptions are accurate at the time of publishing and that the course content as described is based on what is possible to deliver under the government advice and social distancing rules at that particular time. In the event of changes made to those rules, by national or local government, the College may need to make further alterations to the published course content. By enrolling with the College, you will be confirming that you are content to proceed with the course as detailed at that time and on the basis that the programme may be subject to reasonable change. (Course duration – 4 to 6 months)"
+      },
+      {
+        "title": "What can I do after this course?",
+        "content": "The objective of this qualification is to confirm occupational competence in a teaching role within the workplace. You can progress onto Diploma in Education and Training (DET), Level 5, or a University Certification in Education. Completion of the course enables you to meet the minimum requirement for those employed as a teacher or trainer in Further Education colleges, Adult Education centres or Work-Based learning. It will also enable you to apply for the DET (Diploma in Education and Training), providing you have relevant subject qualifications and teaching hours (see DET information page relating to entry requirements). To obtain QTLS and become fully qualified as a teacher, you need to provide evidence that teaching is your main employment activity and that you teach a range of classes and levels."
+      }
+    ]
+  },
+  "curriculum": {
+    "section": "Eduction And Training level 4",
+    "thems": [
+      {
+        "title": "Understanding roles, responsibilities and relationships in education and training ",
+        "content": ""
+      },
+      {
+        "title": "Delivering education and training",
+        "content": ""
+      },
+      {
+        "title": "Using resources for education and training",
+        "content": ""
+      },
+      {
+        "title": "Optional units ",
+        "content": "Optional units available for this qualification are chosen by the centre prior to the course and will be released on the first day of this course."
+      }
+    ]
+  },
+  "faq": {
+    "thems": [
+      {
+        "title": "How do I register my interest for this course?",
+        "content": "The easiest and fastest way to show your interest for this course is to fill in the form on the website and submit it. The admin team will get back to you within 72 hours. If you have an enquiry about the course please contact the admin on: admin@thenorthwestcollege.co.uk"
+      },
+      {
+        "title": "Is the CET course funded?",
+        "content": "If by funded you mean government funds then no the AET is not government funded. However if you are already in a placement or working within a school we can contact your school and discuss with your employer to see if they can help you with the cost. "
+      },
+      {
+        "title": "How much does the CET cost?",
+        "content": "The CET costs 700£. Instalments are available, please contact the admin for more information on the instalment procedure."
+      }
+    ]
+  },
+  "announcement": {
+    "title": "Eduction And Training level 5",
+    "thems": [
+      {
+        "title": "The official next dates for the CET ",
+        "announcement": "The: 2nd of November 2020 and 8th of March 2021"
+      }
+    ]
+  }
+},
+{
+  "title": "det",
+  "id": "323mmdmd423",
+  "type": "articleDescription",
+  "description": {
+    "title": "DET Education and training (Level 5)",
+			"image":  {
+								"name": "Screenshot2021-04-01at19.13.47.png",
+								"alt": "description"
+							},
+    "thems": [
+      {
+        "title": "Where will this course lead?",
+        "content": "This course is aimed at those who are employed in a full teaching role in the post-14 sector and leads to full qualification at Level 5. The course provides progression from the Certificate to Teach in the Lifelong Learning Sector (CTLLS Level 4) and Certificate in Education and Training (CET Level 4). The programme is for candidates who are in a full teaching role with responsibility for initial assessment, design and delivery of courses, assessment of learning, programme evaluation and curriculum development. For entry in to DET you will need to have completed AET/PTLLS and CTLLS/CET or have equivalent qualifications."
+      },
+      {
+        "title": "What will I study?",
+        "content": "The course consists of the following:",
+        "list": [
+          "Planning, delivering and evaluating teaching and learning developing the skills to assess learning in education and training",
+          "Developing knowledge around theories, principles and models in education and training.",
+          "Understanding professionalism and the influence of professional values in education and training.",
+          "Developing Teaching, Learning and Assessment.",
+          "Theories, Principles and Models in Education and Training.",
+          "Action Research.",
+          "Inclusive practice",
+          "Wider Professional Practice and Development in Education and Training.",
+          "Developing, using and Organising Resources in a Specialist Area."
+        ]
+      },
+      {
+        "title": "What qualifications will I get?",
+        "content": "Diploma in Education and Training (DET) Level 5 NCFE."
+      },
+      {
+        "title": "How will I be assessed?",
+        "content": "Assessment will be by assignments, a portfolio of teaching evidence, seminars and presentations, a research assignment, and observations of teaching performance carried out by your course tutor and mentor."
+      },
+      {
+        "title": "How do I get a place on the course?",
+        "content": "After completing the online form, you will need to have an interview before joining the course."
+      },
+      {
+        "title": "What are the entry requirements?",
+        "content": "You will need to have 100 hours of teaching practice working with groups throughout the duration of the course. Teachers are expected to have at least a Level 3 Qualification in their subject teaching area and you will need to show evidence of this or have appropriate experience and be working towards a Level 3 Qualification. You should also have English and Maths qualifications at Level 2 or be willing to work towards these qualifications. You are required to have at least a level 2 functional skills English qualification to access the programme. You will require a named mentor to support you whilst on programme. They will observe your teaching, mentor and support you in your development. The college may be able to help you to get a placement in a school or college, contact us for further information."
+      },
+      {
+        "title": "What else do I need to know?",
+        "content": "If you have a learning difficulty or disability please let us know when you apply. Options for personalised support can be discussed at interview. If you need help completing your application we can help with this too. Please note that when you enrol you are accepting that the course content and module descriptions are accurate at the time of publishing and that the course content as described is based on what is possible to deliver under the government advice and social distancing rules at that particular time. In the event of changes made to those rules, by national or local government, the College may need to make further alterations to the published course content. By enrolling with the College, you will be confirming that you are content to proceed with the course as detailed at that time and on the basis that the programme may be subject to reasonable change. Course duration 10 months (academic year)."
+      },
+      {
+        "title": "What can I do after this course?",
+        "content": "This is a full qualification for teaching in the Lifelong Learning Sector. On successful completion applicants can consider applying for QTLS."
+      }
+    ]
+  },
+  "curriculum": {
+    "section": "Eduction And Training level 5",
+    "thems": [
+      {
+        "title": "Teaching, learning and assessment in education and training.",
+        "content": ""
+      },
+      {
+        "title": "Developing teaching, learning and assessment in education and training.",
+        "content": ""
+      },
+      {
+        "title": "Theories, principles and models in education and training.",
+        "content": ""
+      },
+      {
+        "title": "Optional units",
+        "content": "Optional units available for this qualification are chosen by the centre prior to the course and will be released on the first day of this course."
+      }
+    ]
+  },
+  "faq": {
+    "thems": [
+      {
+        "title": "How do I register my interest for this course?",
+        "content": "The easiest and fastest way to show your interest for this course is to fill in the form on the website and submit it. The admin team will get back to you within 72 hours. If you have an enquiry about the course please contact the admin on: admin@thenorthwestcollege.co.uk"
+      },
+      {
+        "title": "Is the DET course funded?",
+        "content": "If by funded you mean government funds then no the AET is not government funded. However if you are already in a placement or working within a school we can contact your school and discuss with your employer to see if they can help you with the cost. "
+      },
+      {
+        "title": "How much does the DET cost?",
+        "content": "The DET costs 1500£. Instalments are available, please contact the admin for more information on the instalment procedure."
+      }
+    ]
+  },
+  "announcement": {
+    "title": "Eduction And Training level 5",
+    "thems": [
+      {
+        "title": "The official next dates for the DET ",
+        "announcement": "The: 2nd of November 2020 "
+      }
+    ]
+  }
+},
+{
+  "title": "qtls",
+  "id": "1212dsd32e",
+	"type": "articleDescription",
+  "description": {
+    "title": "Qualified Teacher Learning and Skills.",
+ 			"image":  {
+								"name": "Screenshot2021-04-01at19.13.47.png",
+								"alt": "description"
+							},
+    "thems": [
+      {
+        "title": "About QTLS",
+        "content": "QTLS (Qualified Teacher Learning and Skills) status is the badge of professionalism for post-14 education and training, helping practitioners advance in their careers and demonstrate their expertise and experience to colleagues, employers and learners. SET members can gain QTLS status by successfully completing professional formation. Since April 2012, teachers and trainers holding QTLS status who are also members of SET have been recognised in legislation as equivalent in status to teachers with QTS in schools. Holders of QTLS are able to teach across all subjects and all ages on equal pay and conditions, opening up career development and wider employment opportunities."
+      },
+      {
+        "title": "How does it work?",
+        "content": "The North West College offers a mentoring programme for candidates who would like to gain their QTLS via the SET foundation. Our qualified teachers/mentors will support you throughout the QTLS programme; they will help you to understand the expectation, knowledge and skills required to complete your online-portfolio. You will also have a minimum of three 1-1 meetings and two observations -if needed-. In certain circumstances, The North West College can offer you a placement which is mandatory for your QTLS status. Your mentor will be joinable on Microsoft Team -you will be provided login details-. We aim to deliver a very high quality programme and had only outstanding feedback from our previous mentees. Please see below the process of the QTLS programme via the SET foundation. Mostly, you will be writing about yourself, your experience, your teaching practice, your goals and aspirations. You must have a mentor supporting you throughout the programme. The programme lasts six months. If your portfolio is not successful at the first submission, two choices will be considered:",
+        "list": [
+          "SET asks you to amend different points and give you a deadline where they will be reviewing your portfolio again.",
+          "You were not awarded or you have not submitted your portfolio by the deadline: SET will extend the deadline automatically to the next cohort. ",
+          "Under special circumstances, your portfolio’s deadline can be extended if you experienced issues to complete it for the submission deadline."
+        ]
+      },
+      {
+        "title": "What are the entry requirements?",
+        "content": "You need a recognised Level 5 initial teacher training equivalent to the Diploma in Teaching in the Lifelong Learning Sector (DTLLS) or Diploma in Education and Training (DET), for example: PGCE, Certificate in Education, Certificate in FE Teaching Stages 1-3. You also need evidence of a Level 2 qualification in maths and English. If you teach maths or English (numeracy, literacy, ESOL, GCSE or Functional Skills) in either the FE and skills sector or in schools, you will also need to hold maths and/or English qualifications at a minimum of Level 3, such as A Level Maths or English or Level 3 Award in Mathematics for Numeracy teaching or Level 3 Award in English for Literacy and Language teaching. "
+      },
+      {
+        "title": "What are the dates for the QTLS registrations?",
+        "content": "You can express your interest in undertaking professional formation at any time. There are two cohorts a year: one commencing early October and one in early January. Those who have expressed an interest in undertaking QTLS will be invited to register and make payment 15 days before the start date. All workbooks will be issued on the cohort start date. The North West College next dates for the QTLS support and mentoring applications are: 1st August- 30h October 2021 and 15th November- 5th January 2022. "
+      },
+      {
+        "title": "How much does it cost?",
+        "content": "The QTLS mentoring costs 400£. There are two options for making the payment:",
+        "list": [
+          "Pay £400 in full by credit/debit card or by one direct debit payment",
+          "Pay £100 as a deposit by credit/debit card and arrange for three further monthly payments of £100 to be made bank transfer.",
+          " PLEASE NOTE: This is the mentoring programme price with The North West College and not the price from the SET foundation. Please see the price for the QTLS programme on the SET foundation website."
+        ]
+      },
+      {
+        "title": "What can you expect after the QTLS?",
+        "content": "Your employability will be boosted and employers will look at your profile with more interest. You will be recognised as a fully qualified teacher and your pay will be considered from the teaching pay"
+      }
+    ]
+  },
+  "curriculum": {
+    "section": "Qualified teacher learning and skills.",
+    "thems": [
+      {
+        "title": "About You",
+        "content": ""
+      },
+      {
+        "title": "Role and Responsibilities",
+        "content": ""
+      },
+      {
+        "title": "Self-Assessment",
+        "content": ""
+      },
+      {
+        "title": "Professional Development Plan CPD Record",
+        "content": ""
+      },
+      {
+        "title": "Critical Reflection",
+        "content": ""
+      },
+      {
+        "title": "Final Action Plan",
+        "content": ""
+      }
+    ]
+  },
+  "faq": {
+    "thems": [
+      {
+        "title": "How do I register my interest for this course?",
+        "content": "The easiest and fastest way to show your interest for this course is to fill in the form on the website and submit it. The admin team will get back to you within 72 hours. If you have an enquiry about the course please contact the admin on: admin@thenorthwestcollege.co.uk"
+      },
+      {
+        "title": "Is the QTLS mentoring programme funded?",
+        "content": "If by funded you mean government funds then no the QTLS is not government funded. The SET foundation does not have a bursary scheme in place either. However, if you are already in a placement or working within a school we can contact your school and discuss with your employer to see if they can help you with the cost. "
+      },
+      {
+        "title": "How much does the QTLS mentoring cost?",
+        "content": "The QTLS mentoring costs 350£. Instalments are available, please contact the admin for more information on the instalment procedure."
+      }
+    ]
+  },
+  "announcement": {
+    "title": "Eduction And Training level 5",
+    "thems": [
+      {
+        "title": "The official last dates for the QTLS:",
+        "announcement": "The: 6th October 2020 and- 16th January 2021. "
+      }
+    ]
+  }
+}
+			 ]
+			},
+			"studentDashboard": {
+				"articleForStudent": [ {
+			"type": "articleForStudent",
+			"id": "2121221",
+			"title": "cet",
+			"paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"link": {
+				"href": "ewe",
+				"text": "dsd"
+			},
+			"image": {
+				"name": "Screenshot2021-04-01at19.13.47.png",
+				"alt": "description"
+			}
+		} ],
+		"videoArticle": [ {
+			"type": "videoArticle",
+			"typeVideo": "local",
+			"name": "nabil",
+			"link": "video/aet/special.mp4",
+			"date": "12/02/23",
+			"id": "12",
+			"title": "video 1",
+			"paragraph": "Lorem ipsum  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		}, {
+			"type": "videoArticle",
+			"typeVideo": "local",
+			"name": "Amjade",
+			"link": "video/aet/special.mp4",
+			"date": "12/02/23",
+			"id": "13",
+			"title": "video 2",
+			"paragraph": "Lorem ipsum  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		}, {
+			"type": "videoArticle",
+			"typeVideo": "local",
+			"name": "Amjade",
+			"link": "video/aet/special.mp4",
+			"date": "12/02/23",
+			"id": "14",
+			"title": "video 3",
+			"paragraph": "Lorem ipsum  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		} ],
+		"tutorPost": [{
+			"name": "rahma",
+			"text": "recent post",
+			"date_start": "2015",
+			"date_end": "2018",
+			"learners": "cet",
+			"course_group": "2019",
+			"type": "tutorPost",
+			"id": "32kdjf"
+		}]
+			}},
+		"error": "",
+		"serverError": false,
+		"errorMessage": "",
+		"errorCodeSql": ""
+	},
+	"data": {
+		"state": true,
+		"data": {
+			"home": {
+			"article": [ {
+			"id": 334,
+			"type": "article",
+			"navLink": {
+				"text": "more",
+				"href": "/course/aet"
+			},
+			"title": "Award Education and training (L3)",
+			"short": "aet",
+			"paragraph": "This course is suitable for anyone who is thinking to start a career in teaching. You do not need to be teaching or have any experience in teaching to undertake this qualification.",
+			"image": {
+				"name": "Screenshot2021-04-01at19.13.47.png",
+				"alt": "description"
+			}
+		}, {
+			"id": "d22o0cmd",
+			"type": "article",
+			"navLink": {
+				"text": "more",
+				"href": "/course/cet"
+			},
+			"title": "Certificate Education and training (L4)",
+			"short": "cet",
+			"paragraph": "If you have experience in teaching or are in a teaching position but have no qualifications the certificate in education and training is the starting point of your career.",
+			"image": {
+				"name": "Screenshot2021-04-01at19.13.47.png",
+				"alt": "description"
+			}
+		}, {
+			"id": "d22oddkdk90cmd",
+			"type": "article",
+			"navLink": {
+				"text": "more",
+				"href": "/course/det"
+			},
+			"title": "Diploma education and training (L5)",
+			"short": "det",
+			"paragraph": "This course is suitable for anyone who is thinking to start a career in teaching. You do not need to be teaching or have any experience in teaching to undertake this qualification.",
+			"image": {
+				"name": "Screenshot2021-04-01at19.13.47.png",
+				"alt": "description"
+			}
+		}, {
+			"id": "fvjdkdk90cmd",
+			"type": "article",
+			"navLink": {
+				"text": "more",
+				"href": "/course/qtls"
+			},
+			"title": "QTLS",
+			"short": "qtls",
+			"paragraph": "The QTLS status -Qualified Teacher Learning and Skills- is the achievement of your teaching pathway. After completing this formation you will be considered as a fully qualified teacher.",
+			"image": {
+				"name": "Screenshot2021-04-01at19.13.47.png",
+				"alt": "description"
+			}
+		} ],
+				"header": [ {
+					"id": 19,
+					"type": "header",
+					"title": "bingo",
+					"image_1": {
+								"name": "Screenshot2021-04-01at19.13.47.png",
+								"alt": "description"
+							},
+					"image_2": {
+								"name": "Screenshot2021-04-01at19.13.47.png",
+								"alt": "description"
+							}
+
+				} ]
+			},
+			"course": {
+			"articleDescription": [
+				 {
+					"title":"aet",
+					"type":	"articleDescription",
+					"id": 12288,
+						"description": {
+							"title": "Award Education and Eraining (Level 3)",
+							"image":  {
+								"name": "Screenshot2021-04-01at19.13.47.png",
+								"alt": "description"
+							},
+							"thems": [ {
+									"title": "Where will this course lead?",
+									"content": "This course is for pre-service or in-service teachers who are new to teaching and training or those wishing to teach or train. It is designed as a qualification which will equip a wide range of teachers and facilitators with a threshold license to teach.\tThe course suits those who work, or want to work, as teachers in the post 14 Sector, technicians and support staff in further and adult education, and training personnel in commerce, industry and the public sector. We strongly advice learners who have no experience in teaching to undertake this course first to ensure the basic knowledge is understood and mastered."
+								},
+								{
+									"title": "What will I study?",
+									"content": "The course introduces you to the key principles of delivering learning, including:",
+									"list": [
+										"Roles and responsibilities of the teacher",
+										"Planning and preparing sessions",
+										"Delivering learning activities",
+										"Assessment of learning"
+									]
+								},
+								{
+									"title": "How will this course be delivered?",
+									"content": "The course is very active and participative, with opportunities for micro teaching with your peers (short teaching sessions) built into the programme. Note: due to the current situation, the college will assess, considering learners preferences, if the course should be delivered face to face or online."
+								},
+								{
+									"title": "How the qualification is assessed ?",
+									"content": "The Level 3 Award in Education and Training is a competence-based qualification which is internally assessed through a portfolio of evidence, which is externally quality assured. "
+								},
+								{
+									"title": "What qualifications will I get?",
+									"content": "Award in Education and Training Level 3 (NCFE)"
+								},
+								{
+									"title": "Benefits and progression opportunities",
+									"content": "The objectives of this qualification are to prepare learners for employment and upport learners to progress to a teaching role within the workplace. Learners who achieve this qualification could progress to NCFE Level 4 Certificate in Education and Training and NCFE Level 5 Diploma in Education and Training"
+								},
+								{
+									"title": "What are the entry requirements?",
+									"content": "There is no formal entry requirement for the course and you do not have to be teaching or training already to join the course. However, teachers in the Lifelong learning sector are expected to have a Level 3 qualification in their own teaching subject and Level 2 Literacy and Numeracy."
+								},
+								{
+									"title": "What else do I need to know?",
+									"content": "If you have a Learning Difficulty or Disability please let us know when you apply. You will be offered support in your interview. If you need help completing your application we can help with this too."
+								}
+							]
+						},
+						"curriculum": {
+							"title": "Eduction And Training level 3",
+							"thems": [ {
+									"title": "Understanding roles, responsibilities and relationships in education and training ",
+									"content": "NO CONTENT"
+								},
+								{
+									"title": "Optional units",
+									"content": "Optional units available for this qualification cover areas such as understanding and using inclusive teaching and learning approaches and assessment in education and training as well as facilitate learning and development for individuals or in groups (please refer to the Qualification Specification for more information."
+								}
+							]
+						},
+						"faq": {
+								"title": "Eduction And Training level 3",
+						   	"thems": [ {
+									"title": "How do I register my interest for this course?",
+									"content": "The easiest and fastest way to show your interest for this course is to fill in the form on the website and submit it. The admin team will get back to you within 72 hours. If you have an enquiry about the course please contact the admin on:admin@thenorthwestcollege.co.uk."
+								},
+								{
+									"title": "Is the AET course funded?",
+									"content": "If by funded you mean government funds then no the AET is not government funded. However if you are already in a placement or working within a school we can contact your school and discuss with your employer to see if they can help you with the cost."
+								},
+								{
+									"title": "How much does the AET cost?",
+									"content": "The AET costs 350£. Instalments are available, please contact the admin for more information on the instalment procedure. "
+								}
+							]
+						},
+						"announcement": {
+							"title": "Eduction And Training level 3",
+							"thems": [ {
+								"title": "The official next dates for the AET",
+								"announcement": "The: 2nd of November 2020, 4th of January 2021, 8th of March 2021, 10th of May 2021 "
+							} ]
+						}
+				},
+{
+  "title": "cet",
+	"id": "32323dsd23",
+	"type": "articleDescription",
+  "description": {
+    "title": "Certificate Education and training (Level 4)",
+ 		"image":  {
+								"name": "Screenshot2021-04-01at19.13.47.png",
+								"alt": "description"
+							},
+    "thems": [
+      {
+        "title": "Where will this course lead?",
+        "content": "The CET Award is comprised of 5 mandatory units:",
+        "list": [
+          "Understanding roles, responsibilities and relationships in education and training",
+          "Planning to Meet the Needs of Learners in Education and Training",
+          "Delivering Education and Training",
+          "Using Resources for Education and Training",
+          "Assessing Learners in Education and Training",
+          "Note: optional units are included and subject to change."
+        ]
+      },
+      {
+        "title": "How will this course be delivered?",
+        "content": "The course consists of classroom-based learning, tutorial support and observation of your teaching practice. You will have the opportunity to explore key educational theories and to link these to your own practice. Your tutor will give you individual support with your assignments and will give you detailed written feedback on your observed teaching sessions. (3 tutor observations lasting for approximately an hour are required)"
+      },
+      {
+        "title": "How will I be assessed?",
+        "content": "Assessment will be by assignments and observation of teaching performance. You will need to complete a Teaching Practice File, 6 written assignments, some of them may be carried out through seminar presentations. If you have done previous courses or qualifications which could be accredited (eg/ PTLLS/ AET), you have an Accreditation of Prior Learning interview with your tutor to identify what evidence can be carried forward."
+      },
+      {
+        "title": "What are the entry requirements?",
+        "content": "You will need to have completed the Award in Education and Training, PTLLS, or an equivalent qualification. Learners who are already in a teaching position may be given a place into this course. You will need to have 30 hours of teaching practice whilst on the course, working with groups or in a one to one context in the post-16 sector. Teachers are expected to have at least a Level 3 qualification in their subject teaching area and you will need to show evidence of this or have appropriate experience and be working towards a Level 3 qualification. You should also have English and Maths qualifications at Level 2 or be willing to work towards these qualifications. You are required to have at least a level 2 functional skills English qualification to access the programme."
+      },
+      {
+        "title": "What else do I need to know?",
+        "content": "You will need to have a subject specialist mentor in the workplace who can observe your teaching. Two mentor observations lasting for approximately an hour are required. If you have Learning Difficulty or Disability please let us know when you apply. You will be offered support in your interview. If you need help completing your application we can help with this too. Please note that when you enrol you are accepting that the course content and module descriptions are accurate at the time of publishing and that the course content as described is based on what is possible to deliver under the government advice and social distancing rules at that particular time. In the event of changes made to those rules, by national or local government, the College may need to make further alterations to the published course content. By enrolling with the College, you will be confirming that you are content to proceed with the course as detailed at that time and on the basis that the programme may be subject to reasonable change. (Course duration – 4 to 6 months)"
+      },
+      {
+        "title": "What can I do after this course?",
+        "content": "The objective of this qualification is to confirm occupational competence in a teaching role within the workplace. You can progress onto Diploma in Education and Training (DET), Level 5, or a University Certification in Education. Completion of the course enables you to meet the minimum requirement for those employed as a teacher or trainer in Further Education colleges, Adult Education centres or Work-Based learning. It will also enable you to apply for the DET (Diploma in Education and Training), providing you have relevant subject qualifications and teaching hours (see DET information page relating to entry requirements). To obtain QTLS and become fully qualified as a teacher, you need to provide evidence that teaching is your main employment activity and that you teach a range of classes and levels."
+      }
+    ]
+  },
+  "curriculum": {
+    "section": "Eduction And Training level 4",
+    "thems": [
+      {
+        "title": "Understanding roles, responsibilities and relationships in education and training ",
+        "content": ""
+      },
+      {
+        "title": "Delivering education and training",
+        "content": ""
+      },
+      {
+        "title": "Using resources for education and training",
+        "content": ""
+      },
+      {
+        "title": "Optional units ",
+        "content": "Optional units available for this qualification are chosen by the centre prior to the course and will be released on the first day of this course."
+      }
+    ]
+  },
+  "faq": {
+    "thems": [
+      {
+        "title": "How do I register my interest for this course?",
+        "content": "The easiest and fastest way to show your interest for this course is to fill in the form on the website and submit it. The admin team will get back to you within 72 hours. If you have an enquiry about the course please contact the admin on: admin@thenorthwestcollege.co.uk"
+      },
+      {
+        "title": "Is the CET course funded?",
+        "content": "If by funded you mean government funds then no the AET is not government funded. However if you are already in a placement or working within a school we can contact your school and discuss with your employer to see if they can help you with the cost. "
+      },
+      {
+        "title": "How much does the CET cost?",
+        "content": "The CET costs 700£. Instalments are available, please contact the admin for more information on the instalment procedure."
+      }
+    ]
+  },
+  "announcement": {
+    "title": "Eduction And Training level 5",
+    "thems": [
+      {
+        "title": "The official next dates for the CET ",
+        "announcement": "The: 2nd of November 2020 and 8th of March 2021"
+      }
+    ]
+  }
+},
+{
+  "title": "det",
+  "id": "323mmdmd423",
+  "type": "articleDescription",
+  "description": {
+    "title": "DET Education and training (Level 5)",
+			"image":  {
+								"name": "Screenshot2021-04-01at19.13.47.png",
+								"alt": "description"
+							},
+    "thems": [
+      {
+        "title": "Where will this course lead?",
+        "content": "This course is aimed at those who are employed in a full teaching role in the post-14 sector and leads to full qualification at Level 5. The course provides progression from the Certificate to Teach in the Lifelong Learning Sector (CTLLS Level 4) and Certificate in Education and Training (CET Level 4). The programme is for candidates who are in a full teaching role with responsibility for initial assessment, design and delivery of courses, assessment of learning, programme evaluation and curriculum development. For entry in to DET you will need to have completed AET/PTLLS and CTLLS/CET or have equivalent qualifications."
+      },
+      {
+        "title": "What will I study?",
+        "content": "The course consists of the following:",
+        "list": [
+          "Planning, delivering and evaluating teaching and learning developing the skills to assess learning in education and training",
+          "Developing knowledge around theories, principles and models in education and training.",
+          "Understanding professionalism and the influence of professional values in education and training.",
+          "Developing Teaching, Learning and Assessment.",
+          "Theories, Principles and Models in Education and Training.",
+          "Action Research.",
+          "Inclusive practice",
+          "Wider Professional Practice and Development in Education and Training.",
+          "Developing, using and Organising Resources in a Specialist Area."
+        ]
+      },
+      {
+        "title": "What qualifications will I get?",
+        "content": "Diploma in Education and Training (DET) Level 5 NCFE."
+      },
+      {
+        "title": "How will I be assessed?",
+        "content": "Assessment will be by assignments, a portfolio of teaching evidence, seminars and presentations, a research assignment, and observations of teaching performance carried out by your course tutor and mentor."
+      },
+      {
+        "title": "How do I get a place on the course?",
+        "content": "After completing the online form, you will need to have an interview before joining the course."
+      },
+      {
+        "title": "What are the entry requirements?",
+        "content": "You will need to have 100 hours of teaching practice working with groups throughout the duration of the course. Teachers are expected to have at least a Level 3 Qualification in their subject teaching area and you will need to show evidence of this or have appropriate experience and be working towards a Level 3 Qualification. You should also have English and Maths qualifications at Level 2 or be willing to work towards these qualifications. You are required to have at least a level 2 functional skills English qualification to access the programme. You will require a named mentor to support you whilst on programme. They will observe your teaching, mentor and support you in your development. The college may be able to help you to get a placement in a school or college, contact us for further information."
+      },
+      {
+        "title": "What else do I need to know?",
+        "content": "If you have a learning difficulty or disability please let us know when you apply. Options for personalised support can be discussed at interview. If you need help completing your application we can help with this too. Please note that when you enrol you are accepting that the course content and module descriptions are accurate at the time of publishing and that the course content as described is based on what is possible to deliver under the government advice and social distancing rules at that particular time. In the event of changes made to those rules, by national or local government, the College may need to make further alterations to the published course content. By enrolling with the College, you will be confirming that you are content to proceed with the course as detailed at that time and on the basis that the programme may be subject to reasonable change. Course duration 10 months (academic year)."
+      },
+      {
+        "title": "What can I do after this course?",
+        "content": "This is a full qualification for teaching in the Lifelong Learning Sector. On successful completion applicants can consider applying for QTLS."
+      }
+    ]
+  },
+  "curriculum": {
+    "section": "Eduction And Training level 5",
+    "thems": [
+      {
+        "title": "Teaching, learning and assessment in education and training.",
+        "content": ""
+      },
+      {
+        "title": "Developing teaching, learning and assessment in education and training.",
+        "content": ""
+      },
+      {
+        "title": "Theories, principles and models in education and training.",
+        "content": ""
+      },
+      {
+        "title": "Optional units",
+        "content": "Optional units available for this qualification are chosen by the centre prior to the course and will be released on the first day of this course."
+      }
+    ]
+  },
+  "faq": {
+    "thems": [
+      {
+        "title": "How do I register my interest for this course?",
+        "content": "The easiest and fastest way to show your interest for this course is to fill in the form on the website and submit it. The admin team will get back to you within 72 hours. If you have an enquiry about the course please contact the admin on: admin@thenorthwestcollege.co.uk"
+      },
+      {
+        "title": "Is the DET course funded?",
+        "content": "If by funded you mean government funds then no the AET is not government funded. However if you are already in a placement or working within a school we can contact your school and discuss with your employer to see if they can help you with the cost. "
+      },
+      {
+        "title": "How much does the DET cost?",
+        "content": "The DET costs 1500£. Instalments are available, please contact the admin for more information on the instalment procedure."
+      }
+    ]
+  },
+  "announcement": {
+    "title": "Eduction And Training level 5",
+    "thems": [
+      {
+        "title": "The official next dates for the DET ",
+        "announcement": "The: 2nd of November 2020 "
+      }
+    ]
+  }
+},
+{
+  "title": "qtls",
+  "id": "1212dsd32e",
+	"type": "articleDescription",
+  "description": {
+    "title": "Qualified Teacher Learning and Skills.",
+ 			"image":  {
+								"name": "Screenshot2021-04-01at19.13.47.png",
+								"alt": "description"
+							},
+    "thems": [
+      {
+        "title": "About QTLS",
+        "content": "QTLS (Qualified Teacher Learning and Skills) status is the badge of professionalism for post-14 education and training, helping practitioners advance in their careers and demonstrate their expertise and experience to colleagues, employers and learners. SET members can gain QTLS status by successfully completing professional formation. Since April 2012, teachers and trainers holding QTLS status who are also members of SET have been recognised in legislation as equivalent in status to teachers with QTS in schools. Holders of QTLS are able to teach across all subjects and all ages on equal pay and conditions, opening up career development and wider employment opportunities."
+      },
+      {
+        "title": "How does it work?",
+        "content": "The North West College offers a mentoring programme for candidates who would like to gain their QTLS via the SET foundation. Our qualified teachers/mentors will support you throughout the QTLS programme; they will help you to understand the expectation, knowledge and skills required to complete your online-portfolio. You will also have a minimum of three 1-1 meetings and two observations -if needed-. In certain circumstances, The North West College can offer you a placement which is mandatory for your QTLS status. Your mentor will be joinable on Microsoft Team -you will be provided login details-. We aim to deliver a very high quality programme and had only outstanding feedback from our previous mentees. Please see below the process of the QTLS programme via the SET foundation. Mostly, you will be writing about yourself, your experience, your teaching practice, your goals and aspirations. You must have a mentor supporting you throughout the programme. The programme lasts six months. If your portfolio is not successful at the first submission, two choices will be considered:",
+        "list": [
+          "SET asks you to amend different points and give you a deadline where they will be reviewing your portfolio again.",
+          "You were not awarded or you have not submitted your portfolio by the deadline: SET will extend the deadline automatically to the next cohort. ",
+          "Under special circumstances, your portfolio’s deadline can be extended if you experienced issues to complete it for the submission deadline."
+        ]
+      },
+      {
+        "title": "What are the entry requirements?",
+        "content": "You need a recognised Level 5 initial teacher training equivalent to the Diploma in Teaching in the Lifelong Learning Sector (DTLLS) or Diploma in Education and Training (DET), for example: PGCE, Certificate in Education, Certificate in FE Teaching Stages 1-3. You also need evidence of a Level 2 qualification in maths and English. If you teach maths or English (numeracy, literacy, ESOL, GCSE or Functional Skills) in either the FE and skills sector or in schools, you will also need to hold maths and/or English qualifications at a minimum of Level 3, such as A Level Maths or English or Level 3 Award in Mathematics for Numeracy teaching or Level 3 Award in English for Literacy and Language teaching. "
+      },
+      {
+        "title": "What are the dates for the QTLS registrations?",
+        "content": "You can express your interest in undertaking professional formation at any time. There are two cohorts a year: one commencing early October and one in early January. Those who have expressed an interest in undertaking QTLS will be invited to register and make payment 15 days before the start date. All workbooks will be issued on the cohort start date. The North West College next dates for the QTLS support and mentoring applications are: 1st August- 30h October 2021 and 15th November- 5th January 2022. "
+      },
+      {
+        "title": "How much does it cost?",
+        "content": "The QTLS mentoring costs 400£. There are two options for making the payment:",
+        "list": [
+          "Pay £400 in full by credit/debit card or by one direct debit payment",
+          "Pay £100 as a deposit by credit/debit card and arrange for three further monthly payments of £100 to be made bank transfer.",
+          " PLEASE NOTE: This is the mentoring programme price with The North West College and not the price from the SET foundation. Please see the price for the QTLS programme on the SET foundation website."
+        ]
+      },
+      {
+        "title": "What can you expect after the QTLS?",
+        "content": "Your employability will be boosted and employers will look at your profile with more interest. You will be recognised as a fully qualified teacher and your pay will be considered from the teaching pay"
+      }
+    ]
+  },
+  "curriculum": {
+    "section": "Qualified teacher learning and skills.",
+    "thems": [
+      {
+        "title": "About You",
+        "content": ""
+      },
+      {
+        "title": "Role and Responsibilities",
+        "content": ""
+      },
+      {
+        "title": "Self-Assessment",
+        "content": ""
+      },
+      {
+        "title": "Professional Development Plan CPD Record",
+        "content": ""
+      },
+      {
+        "title": "Critical Reflection",
+        "content": ""
+      },
+      {
+        "title": "Final Action Plan",
+        "content": ""
+      }
+    ]
+  },
+  "faq": {
+    "thems": [
+      {
+        "title": "How do I register my interest for this course?",
+        "content": "The easiest and fastest way to show your interest for this course is to fill in the form on the website and submit it. The admin team will get back to you within 72 hours. If you have an enquiry about the course please contact the admin on: admin@thenorthwestcollege.co.uk"
+      },
+      {
+        "title": "Is the QTLS mentoring programme funded?",
+        "content": "If by funded you mean government funds then no the QTLS is not government funded. The SET foundation does not have a bursary scheme in place either. However, if you are already in a placement or working within a school we can contact your school and discuss with your employer to see if they can help you with the cost. "
+      },
+      {
+        "title": "How much does the QTLS mentoring cost?",
+        "content": "The QTLS mentoring costs 350£. Instalments are available, please contact the admin for more information on the instalment procedure."
+      }
+    ]
+  },
+  "announcement": {
+    "title": "Eduction And Training level 5",
+    "thems": [
+      {
+        "title": "The official last dates for the QTLS:",
+        "announcement": "The: 6th October 2020 and- 16th January 2021. "
+      }
+    ]
+  }
+}
+			 ]
+			},
+			"studentDashboard": {
+				"articleForStudent": [ {
+			"type": "articleForStudent",
+			"id": "2121221",
+			"title": "cet",
+			"paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"link": {
+				"href": "ewe",
+				"text": "dsd"
+			},
+			"image": {
+				"name": "Screenshot2021-04-01at19.13.47.png",
+				"alt": "description"
+			}
+		} ],
+		"videoArticle": [ {
+			"type": "videoArticle",
+			"typeVideo": "local",
+			"name": "nabil",
+			"link": "video/aet/special.mp4",
+			"date": "12/02/23",
+			"id": "12",
+			"title": "video 1",
+			"paragraph": "Lorem ipsum  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		}, {
+			"type": "videoArticle",
+			"typeVideo": "local",
+			"name": "Amjade",
+			"link": "video/aet/special.mp4",
+			"date": "12/02/23",
+			"id": "13",
+			"title": "video 2",
+			"paragraph": "Lorem ipsum  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		}, {
+			"type": "videoArticle",
+			"typeVideo": "local",
+			"name": "Amjade",
+			"link": "video/aet/special.mp4",
+			"date": "12/02/23",
+			"id": "14",
+			"title": "video 3",
+			"paragraph": "Lorem ipsum  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		} ],
+		"tutorPost": [{
+			"name": "rahma",
+			"text": "recent post",
+			"date_start": "2015",
+			"date_end": "2018",
+			"learners": "cet",
+			"course_group": "2019",
+			"type": "tutorPost",
+			"id": "32kdjf"
+		}]
+			}
+		},
+		"error": "",
+		"serverError": false,
+		"errorMessage": "",
+		"errorCodeSql": ""
+	}
+}

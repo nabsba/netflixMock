@@ -1,0 +1,27 @@
+name: 🚀 Continuous deployment main                         
+on:           
+  push:            
+    tags:                    
+       - 'v*'   
+jobs:   
+  call-workflow-checking-code:                         
+    uses: nabsba/githubAction/.github/workflows/checking_code.yml@main                                          
+    with:                                 
+     workingDirectory: './frontend'   
+  call-workflow-release:   
+    needs: call-workflow-checking-code
+    uses: nabsba/GithubAction/.github/workflows/release.yml@main     
+  call-workflow-deploy-to-server:
+    needs: call-workflow-checking-code
+    uses: nabsba/GithubAction/.github/workflows/deploy_to_server.yml@main   
+    with: 
+       serverDirectory: test.com/ 
+       localDir: ./
+       filesToBeExcluded: "[ **/.git*, **/.git*/**, **/node_modules/**, **/.vscode/**, frontend/src/**, backend/apis/tnwc/src/**, backend/apis/tnwc/jest.config.ts, backend/apis/tnwc/tsconfig.json, backend/apis/tnwc/yarn.lock, backend/apis/tnwc/.eslintrc.js, backend/apis/tnwc/.prettierrc.js, backend/apis/tnwc/security/**, .env,  frontend/jest.config.ts, frontend/tsconfig.json, frontend/yarn.lock, frontend/test.html, frontend/.eslintrc.js, frontend/.prettierrc.js, **/doc/**, .gitignore, Dockerfile, READMER.md,**/public/**,**/test/**, frontend/.prettierrc, frontend/babel.config.js, frontend/db.json, frontend/json-server.json, frontend/middleware-1.js, frontend/routes.json, frontend/webpack.dev.config.ts, frontend/webpack.prod.config.ts, frontend/yarn-error.log]"
+    secrets:
+       serverName: ${{ secrets.ftp_server}} 
+       serverUserName: ${{ secrets.ftp_username }}
+       serverPassword: ${{ secrets.ftp_password }}  
+       serverPort: ${{ secrets.ftp_port }}  
+
+

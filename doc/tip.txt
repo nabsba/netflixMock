@@ -1,0 +1,7 @@
+Environment Code:
+ - Lint: is a static code analysis tool for identifying problematic patterns found in JavaScript code.
+ - Babel: transform/compile your code es6 to es5 etc.
+ - Typescript: analyse the typing.
+ - Prettier: format your code.
+ - Webpack: bundle/package your code.
+- https://jsonplaceholder.typicode.com/    fake datas

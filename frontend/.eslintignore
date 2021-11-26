@@ -1,0 +1,10 @@
+node_modueles
+dist
+node_modules
+build/*.js
+config/*.js
+src/*.js
+.eslintrc.js
+asset/*.ts
+
+/* eslint-disable */

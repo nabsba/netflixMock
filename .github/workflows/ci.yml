@@ -1,0 +1,15 @@
+name: CI
+on:
+  push:
+    branches: 
+    - develop
+    - main
+  pull_request:
+    branches: 
+    - develop
+    - main
+jobs:
+  call-workflow-checking-code:                         
+    uses: nabsba/githubAction/.github/workflows/checking_code.yml@main                                          
+    with:                                 
+     workingDirectory: './frontend'   

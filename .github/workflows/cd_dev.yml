@@ -1,0 +1,22 @@
+# not used as "call-workflow-release-branch" could lead to conflicts that needs to be resolved.
+name: 🚀 Continuous deployment develop
+on:
+  workflow_dispatch:
+   inputs: 
+     version: 
+      description: 'Semver type of new version  (major/minor/patch)'
+      required: true
+jobs:   
+  call-workflow-checking-code:                         
+   uses: nabsba/githubAction/.github/workflows/checking_code.yml@main                                          
+   with:                                 
+     workingDirectory: './frontend'   
+  call-workflow-release-branch: 
+   needs: call-workflow-checking-code
+   uses: nabsba/githubAction/.github/workflows/release_branch.yml@main   
+   with: 
+        workingDirectory: './frontend' 
+        versionType: ${{ github.event.inputs.version }}
+        gitHubName: 'nabsba'
+        gitHubRepository: 'nameOfTheRepo'
+        gitHubEmail: '73831928+nabsba@users.noreply.github.com'

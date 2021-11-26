@@ -1,0 +1,10 @@
+{
+  "/authentification/inscription": "/inscription",
+	"/dashboardData/:id": "/dashboard/:id",
+  "/authentification/login": "/login",
+	"/authentification/admin": "/admin",
+	"/authentification/logout":"/logout",
+  "/logout": "/logout",
+	"/form/contact": "/contact",
+	"/data/adminDashboard": "/data"
+}
