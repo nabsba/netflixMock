@@ -19,10 +19,7 @@ const initialState = {
 export const fetchDataPages = createAsyncThunk('dataPages', async () => {
 	let result: Result = { ...resultTemplate };
 	try {
-		result = await serverGet(
-			URL_ADDRESSES.fileManager.data.read + '/data',
-			null,
-		);
+		result = await serverGet(URL_ADDRESSES.default, null);
 		if (!result.state) {
 			result.state = true;
 			result.data = JSON.parse(JSON.stringify(dataBackup));
