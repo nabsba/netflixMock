@@ -6,4 +6,11 @@ export type TReducers = {
 			course: any;
 		};
 	};
+	dataNetflix: {
+		pending: boolean;
+		state: boolean;
+		data: any;
+		error: '';
+		errorServer: '';
+	};
 };

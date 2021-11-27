@@ -67,7 +67,6 @@ const App: React.FC = () => {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/test/:id" element={<Home />} />
-
 				{/* <ErrorServer />
 				</Route>
 				<Route path="*">

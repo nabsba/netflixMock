@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
 import dataPages from '../pages/dataManagment/reducer';
+import dataNetflix from '../netflix/dataManagment/reducer';
 // allReducers
 // import { persistReducer } from "redux-persist";
 // tell to redux you want want to use your storage as default
@@ -11,6 +12,7 @@ import dataPages from '../pages/dataManagment/reducer';
 // Will define which reducer we want then to be persisted.
 const reducer = combineReducers({
 	dataPages,
+	dataNetflix,
 });
 
 const reducers = configureStore({
