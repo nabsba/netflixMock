@@ -1,7 +1,7 @@
 export type Result = {
 	state: boolean;
 	data: any;
-	error: string;
+	errorCodeServer: string;
 	serverError: boolean;
 	errorMessage: string;
 	errorCodeSql: string;
