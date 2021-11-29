@@ -1,20 +1,44 @@
-const header = {
+import getIcon from '../../../component/factory/icon/Icon';
+import { THeader } from '../../../component/tree/organism/header/type';
+
+const header: THeader = {
 	navigation: {
 		listNavigation: ['Home', 'TV Show', 'Movies', 'Latest', 'My list'],
-	},
-	movieBackground: {
-		background: {
-			src: 'https://occ-0-475-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABQHPJ2jrCTdo1LCvqdDYLYeX1YDLNpvS8oe8OribopJ9em2i-HKFaidmFmjcd0MgAjqNUI5sZSgoSlC1F0UCDtL39gN2.webp?r=f3a',
-			alt: 'Arcane',
+		navigationNetflixLogo: {
+			src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png',
+			alt: 'netflix',
 		},
-		description: {
-			src: 'https://occ-0-475-1167.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABcL0sOLj3ZviPqIEs-lqt_7s_D5utZHftF0QKqLnrWeGgh3Cd-taT4S4cFjeHb62iAumeN_JaizOXf7NO5YZfmt6GPo5b8Sqxb5sD56EE0D2p89n2RGa5B7akZqwbHQ80fQA_7zEGXUzBdSKJpdeD77mumF2My12dWxfzOPo3Qk6SA.webp?r=183',
-			alt: 'Arcane',
+		navigationMobileSpan: 'browser',
+		listIcon: {
+			IconSearch: getIcon('Search'),
+			ArrowDown: getIcon('ArrowDown'),
+			ProfileIcon: getIcon('ProfileIcon'),
+			NotificationIcon: getIcon('NotificationIcon'),
 		},
 	},
-	h2: 'Regardez la saison 1 maintenant',
-	paragraph:
-		'Set in utopian Piltover and the oppressed underground of Zaun, the story follows the origins of two iconic League champions-and the power that will tear them apart.',
+	imageBackground: {
+		src: 'https://occ-0-475-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABQHPJ2jrCTdo1LCvqdDYLYeX1YDLNpvS8oe8OribopJ9em2i-HKFaidmFmjcd0MgAjqNUI5sZSgoSlC1F0UCDtL39gN2.webp?r=f3a',
+		alt: 'Arcane',
+	},
+	imageDescription: {
+		src: 'https://occ-0-475-1167.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABcL0sOLj3ZviPqIEs-lqt_7s_D5utZHftF0QKqLnrWeGgh3Cd-taT4S4cFjeHb62iAumeN_JaizOXf7NO5YZfmt6GPo5b8Sqxb5sD56EE0D2p89n2RGa5B7akZqwbHQ80fQA_7zEGXUzBdSKJpdeD77mumF2My12dWxfzOPo3Qk6SA.webp?r=183',
+		alt: 'Arcane',
+	},
+	articleOne: {
+		h2: { title: 'Regardez la saison 1 maintenant' },
+		paragraph:
+			'Set in utopian Piltover and the oppressed underground of Zaun, the story follows the origins of two iconic League champions-and the power that will tear them apart.',
+	},
+	buttons: {
+		one: {
+			text: 'lecture',
+			componentPassed: getIcon('Triangle'),
+		},
+		two: {
+			text: 'more',
+			componentPassed: getIcon('Indication'),
+		},
+	},
 };
 
 export { header };
