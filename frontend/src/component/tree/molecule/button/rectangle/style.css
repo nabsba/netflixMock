@@ -1,0 +1,54 @@
+@import'../../../../common/css/variable.css';
+
+.button_rectangle {
+    background-color: var(--color-1);
+    color: black;
+		border-radius: var(--border-radius);
+		    padding: 0.4rem;
+		padding-right:.8rem;
+		min-width: 7rem;
+		max-width: 10rem;
+		border: 0px;
+		/* padding:0;
+		background-color: rgba(255,255,255,0.75);
+		border:0px;
+		 */
+}
+.button_rectangle:hover {
+cursor: pointer;
+background-color: rgba(255,255,255,0.75);
+}
+.button_rectangle svg {
+  font-size: 1.2rem;
+}
+.button_rectangle svg:nth-child(1) {
+	transform: rotate(
+90deg);
+}
+@media (min-width: 1440px) {
+  .button_rectangle span {
+    font-size: 1rem;
+  }
+}
+.button_rectangle span {
+	font-weight: bold;
+	padding-left:.5rem;
+}
+
+.header_description_buttons button:nth-child(2) {
+color:var(--color-1);
+background-color:rgba(109,109,110,0.7);
+margin-left:.5rem;
+}
+
+.header_description_buttons button:nth-child(2):hover{
+	background-color: rgba(109,109,110,0.4);
+}
+.header_description_buttons button:nth-child(2) svg {
+	transform:rotate( 
+180deg);
+}  
+.header_description_buttons button:nth-child(2) svg path{
+	stroke:white;
+}
+
