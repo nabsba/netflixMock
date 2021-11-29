@@ -1,9 +1,11 @@
 import React, { ReactElement } from 'react';
 import {
 	ArrowDown,
+	Indication,
 	NotificationIcon,
 	ProfileIcon,
 	Search,
+	Triangle,
 } from '../../tree/atom/icon';
 import IconWrapper from '../../tree/atom/icon/IconWrapper';
 
@@ -19,6 +21,10 @@ const getIcon = (indice: string): ReactElement => {
 			return <IconWrapper Icon={<NotificationIcon />} />;
 		case 'ProfileIcon':
 			return <ProfileIcon />;
+		case 'Indication':
+			return <Indication />;
+		case 'Triangle':
+			return <Triangle />;
 
 		default:
 			return <span> {indice}</span>;
