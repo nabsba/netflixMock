@@ -1,12 +1,10 @@
 import { TBrowserInfo } from '..';
+import { THeader } from '../../component/tree/organism/header/type';
 
 export type TReducers = {
 	dataPages: {
-		pending: boolean;
-		data: {
-			home: any;
-			course: any;
-		};
+		home: { header: THeader };
+		course: any;
 	};
 	dataNetflix: {
 		pending: boolean;
