@@ -1,0 +1,71 @@
+/*==============================
+	- Author: Nabil
+	- App: Netflix mock
+================================= */
+
+html {
+	scroll-behavior: smooth;
+	  background: var(--color-3_1);
+    color: var(--color-1);
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box !important;
+}
+
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*display class*/
+.flex_row {
+	display: flex;
+} 
+.flex_row_between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex_row_between_align_center {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex_row_align_items_center {
+	  display: flex;
+    align-items: center;
+	
+}
+
+/* ----------------------------------------------*/
+/* 02 User preference			                     	 */
+/* ----------------------------------------------*/
+
+/* No motion */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0s !important;
+		animation-iteration-count: 0s !important;
+		transition-duration: 0s !important;
+		scroll-behavior: auto !important;
+		transition-delay: 0s !important;
+	}
+}
