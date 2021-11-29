@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.css';
-import { TImage } from './type';
+import { TImageAsComponent } from './type';
 
 type Props = {
-	data: TImage;
+	data: TImageAsComponent;
 };
 
 const ImageAsComponent: React.FC<Props> = ({ data: { src, alt } }) => {
