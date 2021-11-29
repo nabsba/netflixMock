@@ -1,26 +1,25 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 import { fetchDataNetflix, TReducers } from '../../../../service';
 import { useDispatch, useSelector } from 'react-redux';
 import './style.css';
-// import THome from './type';
+import { Header } from '../../organism';
 
 const Home: React.FC = () => {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		dispatch(fetchDataNetflix('trending/all/day'));
-	}, []);
-
-	// To grab address.com/:id
-	const { id } = useParams();
+		dispatch(fetchDataNetflix());
+	}, [dispatch]);
 	const {
-		dataNetflix: { data },
+		dataNetflix,
+		dataPages: {
+			home: { header },
+		},
 	} = useSelector((state: TReducers) => state);
-	console.log(data);
+
 	return (
-		<div>
-			<h1> Hello netflix app 2</h1>
+		<div id="home-page" style={{ height: '200vh' }}>
+			<Header data={header} />
 		</div>
 	);
 };
