@@ -1,0 +1,159 @@
+@import '../../../common/css/variable.css';
+
+
+.navigation {
+	height: 41px;
+	position: fixed;
+	width:100%;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+}
+
+.navigation_scroll {
+	background-color: var(--color-3);
+	transition: all 1s;
+}
+
+.navigation_href_netflix_wrapper img {
+	height: 1.2rem;
+}
+
+
+
+.navigation span {
+	color: var(--color-1);
+	text-transform: capitalize;
+}
+
+.navigation li:hover {
+	color: var(--color-1);
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.navigation_href_netflix_wrapper {
+	display: flex;
+}
+
+.navigation_href_netflix_wrapper a {
+	margin: auto
+}
+
+.navigation_menus_wrapper {
+	position: relative;
+}
+
+.navigation_menus_wrapper:hover {
+	cursor: pointer;
+}
+
+.navitation_mobile_tablet {
+	display: flex;
+	height: 100%;
+	margin-left: 2.5rem;
+}
+
+.navigation_menus {
+	position: absolute;
+	z-index: -10;
+	opacity: 0;
+	padding-top: 4rem;
+}
+
+.navigation_menus_wrapper:hover .navigation_menus {
+	z-index: 1 !important;
+	opacity: 1 !important;
+	transition: opacity 200ms 300ms;
+}
+
+.navigation_menus li {
+	height: 50px;
+	width: 260px;
+	display: flex;
+	background-color: #0000009e;
+
+}
+
+.navigation_menus li:first-child::before {
+	content: "\25BC";
+	width: 10px;
+	font-size: 1.8rem;
+	position: absolute;
+	top: -17px;
+	width: 100%;
+	text-align: center;
+	transform: rotate(180deg);
+}
+
+.navigation_menus li:first-child {
+	position: relative;
+	border-top: 2px solid var(--color-1);
+}
+
+.navigation_menus li:first-child span {
+	color: var(--color-1);
+}
+
+.navigation_menus li span {
+	margin: auto;
+	color: var(--color-2);
+	font-size: 1.2rem;
+	font-weight: 700;
+	font-family: var(--police-1);
+}
+
+.navigation_menus li:hover {
+	background-color: rgb(36 36 36 / 50%);
+	cursor: pointer;
+	transition: all 500ms
+}
+
+.navigation_menus_icon_wrapper {
+	height: 20px;
+	color: var(--color-1);
+	width: 2rem;
+}
+
+
+.navigation_sub_wrapper_2 span {
+	width: 1.5rem;
+}
+
+.navigation_sub_wrapper_2 span,
+.navigation_sub_wrapper_2 div {
+	margin-left: 1.5rem;
+}
+
+
+
+@media screen and (min-width: 900px) {
+ .navigation_menus {
+	position: relative;
+opacity:1;
+    display: flex;
+		padding-top: 0;
+	}
+		.navigation {
+		height: 68px;
+	}
+		.navigation_href_netflix_wrapper img {
+		height: 3rem;
+	}
+	.navigation_menus li {
+		background-color: transparent;
+		    height: auto;
+    width: auto;
+padding-left: 1.8rem;
+	}
+	.navitation_mobile_tablet {
+		display:none
+	}
+	.navigation_menus li:first-child {
+		border-top: none;
+	}
+	.navigation_menus li:first-child::before {
+		display:none;
+	}
+.navigation_menus_wrapper {
+	    padding-left: 2rem;
+}
+}
