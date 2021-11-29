@@ -17,6 +17,23 @@ html {
     -ms-user-select: none;
     user-select: none;
 }
+@media (max-width: 2560px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 10px;
+  }
+}
 
 *,
 *:before,
@@ -25,7 +42,6 @@ html {
 	padding: 0;
 	box-sizing: border-box !important;
 }
-
 
 ul {
 	list-style: none;
@@ -45,6 +61,11 @@ ul {
 .flex_row_between_align_center {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+.flex_row_center_align_center {
+	display: flex;
+	justify-content:center;
 	align-items: center;
 }
 .flex_row_align_items_center {
