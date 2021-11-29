@@ -1,0 +1,6 @@
+Reducer: 
+error: A non-serializable value was detected in the state
+cause: A component was passing through props 
+solution: add middleware function in Common/reducer
+source: https://stackoverflow.com/questions/61704805/getting-an-error-a-non-serializable-value-was-detected-in-the-state-when-using
+
