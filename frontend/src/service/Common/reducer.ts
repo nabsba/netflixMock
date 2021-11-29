@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
 import dataPages from '../pages/dataManagment/reducer';
-import dataNetflix from '../netflix/dataManagment/reducer';
+import { dataNetflix } from '../netflix/dataManagment/reducer';
+import { browserInfo } from '../browserInfo/reducer';
 // allReducers
 // import { persistReducer } from "redux-persist";
 // tell to redux you want want to use your storage as default
@@ -13,6 +14,7 @@ import dataNetflix from '../netflix/dataManagment/reducer';
 const reducer = combineReducers({
 	dataPages,
 	dataNetflix,
+	browserInfo,
 });
 
 const reducers = configureStore({

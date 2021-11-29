@@ -1,3 +1,5 @@
+import { TBrowserInfo } from '..';
+
 export type TReducers = {
 	dataPages: {
 		pending: boolean;
@@ -13,4 +15,5 @@ export type TReducers = {
 		error: '';
 		errorServer: '';
 	};
+	browserInfo: TBrowserInfo;
 };
