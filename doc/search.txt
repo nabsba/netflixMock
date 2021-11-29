@@ -1,13 +1,5 @@
 bug: 
 todo: 
 refactor:
-
-les plus gros successsyr netflix
-
-tendences actuelles
-
-seulement sur netflix
-
-to 10 au royaume unis ayhiyrd hui
-
-ajout recent
+todelete:
+tofold:
