@@ -1,0 +1,4 @@
+CSS
+
+display:block, doesn't work with transition to hide an element. Opacity 0 will hide it but the content will still be present on the page. 
+One solution is to set left to -1000px like I did for navigation and the menu on browser hover.
