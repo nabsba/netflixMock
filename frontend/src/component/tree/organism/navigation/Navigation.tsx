@@ -1,20 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import getIcon from '../../../factory/icon/Icon';
+import React from 'react';
 import { ImageAsComponent, Span } from '../../atom';
 import './style.css';
 import { TNavigation } from './type';
 
 type Props = {
 	data: TNavigation;
+	isOnScroll: boolean;
 };
 
 const Navigation: React.FC<Props> = ({
-	data: { listNavigation, isScroll },
+	data: {
+		listNavigation,
+		navigationNetflixLogo,
+		navigationMobileSpan,
+		listIcon,
+	},
+	isOnScroll,
 }) => {
-	const IconSearch = getIcon('Search');
-	const ArrowDown = getIcon('ArrowDown');
-	const ProfileIcon = getIcon('ProfileIcon');
-	const NotificationIcon = getIcon('NotificationIcon');
 	const MenusHTML = listNavigation.map((menu: string) => (
 		<li key={menu}>
 			<Span data={menu} />
@@ -24,30 +26,32 @@ const Navigation: React.FC<Props> = ({
 	return (
 		<div
 			className={`navigation flex_row_between_align_center ${
-				isScroll ? 'navigation_scroll' : ''
+				isOnScroll ? 'navigation_scroll' : ''
 			}`}
 		>
 			<div className="navigation_sub_wrapper_1 flex_row_align_items_center">
 				<div className="navigation_href_netflix_wrapper">
 					<ImageAsComponent
 						data={{
-							src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png',
-							alt: 'netflix',
+							src: navigationNetflixLogo.src,
+							alt: navigationNetflixLogo.alt,
 						}}
 					/>
 				</div>
 				<div className="navigation_menus_wrapper">
 					<div className="navitation_mobile_tablet flex_row_align_items_center">
-						<Span data="browser" />
-						<div className="navigation_menus_icon_wrapper">{ArrowDown}</div>
+						<Span data={navigationMobileSpan} />
+						<div className="navigation_menus_icon_wrapper">
+							{listIcon.ArrowDown}
+						</div>
 					</div>
 					<ul className="navigation_menus"> {MenusHTML} </ul>
 				</div>
 			</div>
 			<div className="navigation_sub_wrapper_2 flex_row ">
-				<span> {IconSearch}</span>
-				<span> {NotificationIcon}</span>
-				{ProfileIcon}
+				<span> {listIcon.IconSearch}</span>
+				<span> {listIcon.NotificationIcon}</span>
+				{listIcon.ProfileIcon}
 			</div>
 		</div>
 	);
