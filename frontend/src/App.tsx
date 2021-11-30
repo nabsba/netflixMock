@@ -4,9 +4,13 @@ import './component/common/css/share.css';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { Home } from './component/tree/page';
-import { getDatasPages, TBrowserInfo, updateInfoDevice } from './service';
+import {
+	fetchDataNetflix,
+	getDatasPages,
+	TBrowserInfo,
+	updateInfoDevice,
+} from './service';
 import { TReducers } from './service';
-import { browserInfo } from './service/browserInfo/reducer';
 // Reminder: https://medium.com/@jenniferdobak/react-router-vs-switch-components-2af3a9fc72e
 
 const App: React.FC = () => {
@@ -41,6 +45,7 @@ const App: React.FC = () => {
 		};
 		// Update redux
 		dispatch(getDatasPages());
+		dispatch(fetchDataNetflix());
 		dispatch(updateInfoDevice(infoDevice));
 	}, [dispatch]);
 
