@@ -4,20 +4,21 @@
 .navigation {
 	height: 41px;
 	position: fixed;
-	width:100%;
-  background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+	z-index: 1000;
+	width: 100%;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .7) 10%, rgba(0, 0, 0, 0));
+	padding-left:  var(--main-space);
+	padding-right: var(--main-space);
 }
 
 .navigation_scroll {
-	background-color: var(--color-3);
+	background-color: var(--color-3_1);
 	transition: all 1s;
 }
 
 .navigation_href_netflix_wrapper img {
 	height: 1.2rem;
 }
-
-
 
 .navigation span {
 	color: var(--color-1);
@@ -38,9 +39,6 @@
 	margin: auto
 }
 
-.navigation_menus_wrapper {
-	position: relative;
-}
 
 .navigation_menus_wrapper:hover {
 	cursor: pointer;
@@ -52,24 +50,31 @@
 	margin-left: 2.5rem;
 }
 
-.navigation_menus {
-	position: absolute;
-	z-index: -10;
-	opacity: 0;
-	padding-top: 4rem;
+.navigation_sub_wrapper_1 {
+	position: relative;
 }
 
-.navigation_menus_wrapper:hover .navigation_menus {
+.navigation_menus {
+	position: absolute;
+	z-index: -40;
+	opacity: 0;
+	padding-top: 4rem;
+	left: -1000px;
+}
+
+.navigation_menus_wrapper:hover .navigation_menus,
+.navigation_menus:hover {
 	z-index: 1 !important;
 	opacity: 1 !important;
+	left: 0;
 	transition: opacity 200ms 300ms;
 }
 
 .navigation_menus li {
-	height: 50px;
-	width: 260px;
 	display: flex;
 	background-color: #0000009e;
+	height: 50px;
+	width: 260px;
 
 }
 
@@ -95,8 +100,7 @@
 
 .navigation_menus li span {
 	margin: auto;
-	color: var(--color-2);
-	font-size: 1.2rem;
+	color: var(--color-1_1);
 	font-weight: 700;
 	font-family: var(--police-1);
 }
@@ -108,7 +112,7 @@
 }
 
 .navigation_menus_icon_wrapper {
-	height: 20px;
+	height: var(--icon-height-1);
 	color: var(--color-1);
 	width: 2rem;
 }
@@ -126,34 +130,59 @@
 
 
 @media screen and (min-width: 900px) {
- .navigation_menus {
-	position: relative;
-opacity:1;
-    display: flex;
-		padding-top: 0;
-	}
-		.navigation {
+
+	.navigation {
 		height: 68px;
+		padding-left: Calc(var(--main-space) * 3);
+		padding-right: Calc(var(--main-space) * 3);
 	}
-		.navigation_href_netflix_wrapper img {
-		height: 3rem;
+
+
+	.navigation_menus {
+		position: relative;
+		opacity: 1;
+		display: flex;
+		padding-top: 0;
+		left: 0;
 	}
+
+	.navigation_href_netflix_wrapper img {
+		height: 2rem;
+	}
+
 	.navigation_menus li {
 		background-color: transparent;
-		    height: auto;
-    width: auto;
-padding-left: 1.8rem;
+		height: auto;
+		width: auto;
+		padding-left: 1.8rem;
 	}
+
+	.navigation_menus li span:hover {
+		color: var(--color-1_3)
+	}
+
+	/* Would be the one that is active in a real situation. */
+	.navigation_menus li span:first-child:hover {
+		color: var(--color-1);
+	}
+
 	.navitation_mobile_tablet {
-		display:none
+		display: none
 	}
+
 	.navigation_menus li:first-child {
 		border-top: none;
 	}
+
 	.navigation_menus li:first-child::before {
-		display:none;
+		display: none;
 	}
-.navigation_menus_wrapper {
-	    padding-left: 2rem;
-}
+
+	.navigation_menus li:hover {
+		background-color: transparent;
+	}
+
+	.navigation_menus_wrapper {
+		padding-left: 2rem;
+	}
 }
