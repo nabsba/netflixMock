@@ -1,10 +1,14 @@
 import React, { ReactElement } from 'react';
 import {
 	ArrowDown,
+	ArrowDownBroken,
 	Indication,
 	NotificationIcon,
+	Plus,
 	ProfileIcon,
 	Search,
+	ThumbsDown,
+	ThumbsUp,
 	Triangle,
 } from '../../tree/atom/icon';
 import IconWrapper from '../../tree/atom/icon/IconWrapper';
@@ -25,7 +29,14 @@ const getIcon = (indice: string): ReactElement => {
 			return <Indication />;
 		case 'Triangle':
 			return <Triangle />;
-
+		case 'ThumbsUp':
+			return <ThumbsUp />;
+		case 'ThumbsDown':
+			return <ThumbsDown />;
+		case 'Plus':
+			return <Plus />;
+		case 'ArrowDownBroken':
+			return <ArrowDownBroken />;
 		default:
 			return <span> {indice}</span>;
 	}
