@@ -3,6 +3,7 @@ import './style.css';
 import { Header } from '../../organism';
 import { TReducers } from '../../../../service';
 import { useSelector } from 'react-redux';
+import { Arcturus } from '../../template';
 
 const Home: React.FC = () => {
 	const {
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
 	return (
 		<div id="home-page" style={{ height: '200vh' }}>
 			<Header data={header} />
+			<Arcturus data={'hello'} />
 		</div>
 	);
 };
