@@ -1,15 +1,10 @@
-import React, { useEffect } from 'react';
-import { fetchDataNetflix, TReducers } from '../../../../service';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
 import './style.css';
 import { Header } from '../../organism';
+import { TReducers } from '../../../../service';
+import { useSelector } from 'react-redux';
 
 const Home: React.FC = () => {
-	const dispatch = useDispatch();
-
-	useEffect(() => {
-		dispatch(fetchDataNetflix());
-	}, [dispatch]);
 	const {
 		dataNetflix,
 		dataPages: {
