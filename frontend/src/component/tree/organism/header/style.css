@@ -1,5 +1,6 @@
 .header {
 	position: relative;
+	min-height: 60vh;
 }
 
 .header_image_background img {
@@ -21,32 +22,40 @@
 	z-index: -10;
 	top: 4rem;
 }
+
 .header_description {
 	padding-top: 3rem;
-  width: 40vw;
+	width: 40vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: var(--main-space);
 }
 
 @media only screen and (min-width: 900px) {
-.header_description {
-	padding-top: 5rem;
+	.header {
+		min-height: 100vh;
+	}
+
+	.header_description {
+		padding-top: 8rem;
+		padding-left: Calc(var(--main-space) * 3);
+	}
 }
- }
 
 .header_description_image {
-    height: 10rem;
-    position: relative;
+	height: 10rem;
+	position: relative;
 }
+
 .header_description_image img {
-	position:absolute;
-	height:100%;
-	width:100%;
-	z-index:-8;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -8;
 }
 
-.header_description_button button{
-	  margin-right: 1rem;
-    margin-bottom: 1rem;
+.header_description_button button {
+	margin-right: 1rem;
+	margin-bottom: 1rem;
 }
-
-
-
