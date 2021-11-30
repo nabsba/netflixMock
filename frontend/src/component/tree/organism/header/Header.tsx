@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import getIcon from '../../../factory/icon/Icon';
-import { H2, ImageAsComponent, Paragraph } from '../../atom';
+import { ImageAsComponent } from '../../atom';
 import { ArticleOne } from '../../molecule';
 import ButtonRectangle from '../../molecule/button/rectangle/ButtonRectangle';
 import Navigation from '../navigation/Navigation';
