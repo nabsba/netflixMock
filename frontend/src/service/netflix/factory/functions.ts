@@ -1,6 +1,4 @@
 import { serverGetApi, URL_ADDRESSES } from '../../../bridge';
-import { TYPE_FETCH } from '../dataManagment/reducer';
-import { TInfosForUpdateDataPage } from '../type';
 
 //tofold
 type infosFetchTest = {
