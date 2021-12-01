@@ -1,0 +1,13 @@
+@import'../../../common/css/variable.css';
+
+.hd {
+    border: 2px solid var(--color-2);
+    width: max-content;
+    padding: 0.1rem;
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: var(--border-radius);
+}
