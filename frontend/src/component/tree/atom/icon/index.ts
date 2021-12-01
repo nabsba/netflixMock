@@ -9,7 +9,11 @@ import {
 	BsHandThumbsDown as ThumbsDown,
 } from 'react-icons/bs';
 import { AiOutlinePlus as Plus } from 'react-icons/ai';
-import { IoIosArrowDown as ArrowDownBroken } from 'react-icons/io';
+import {
+	IoIosArrowDown as ArrowDownBroken,
+	IoIosVolumeOff as VolumeOff,
+	IoMdVolumeHigh as VolumeHigh,
+} from 'react-icons/io';
 
 export {
 	Search,
@@ -22,4 +26,6 @@ export {
 	ThumbsDown,
 	Plus,
 	ArrowDownBroken,
+	VolumeOff,
+	VolumeHigh,
 };

@@ -12,6 +12,8 @@ import {
 	ThumbsDown,
 	ThumbsUp,
 	Triangle,
+	VolumeHigh,
+	VolumeOff,
 } from '../../tree/atom/icon';
 import IconWrapper from '../../tree/atom/icon/IconWrapper';
 
@@ -48,6 +50,10 @@ const getIcon = (indice: string): ReactElement => {
 					}}
 				/>
 			);
+		case 'VolumeHigh':
+			return <VolumeHigh />;
+		case 'VolumeOff':
+			return <VolumeOff />;
 		default:
 			return <span> {indice}</span>;
 	}
