@@ -1,4 +1,6 @@
 import React, { ReactElement } from 'react';
+import getImg from '../../../asset';
+import { ImageAsComponent } from '../../tree/atom';
 import {
 	ArrowDown,
 	ArrowDownBroken,
@@ -37,6 +39,15 @@ const getIcon = (indice: string): ReactElement => {
 			return <Plus />;
 		case 'ArrowDownBroken':
 			return <ArrowDownBroken />;
+		case 'Netflix':
+			return (
+				<ImageAsComponent
+					data={{
+						src: getImg('icons', 'netflix'),
+						alt: 'netflix',
+					}}
+				/>
+			);
 		default:
 			return <span> {indice}</span>;
 	}
