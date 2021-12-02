@@ -1,7 +1,8 @@
-type TVideo = {
+type TVideoPlayer = {
 	url: string;
 	type: string;
 	name: string;
 	date: string;
+	isVolumeUp?: number;
 };
-export default TVideo;
+export default TVideoPlayer;
