@@ -4,14 +4,19 @@ import {
 	serverGetApi,
 } from '../../../bridge/common/requestServer';
 import URL_ADDRESSES from '../../../bridge/url';
-import { TInfosForUpdateDataPage } from '../type';
+import {
+	TDataNetflix,
+	TInfosForUpdateDataPage,
+	TNetflixListMoviesReturned,
+	TWishListMovies,
+} from '../type';
 
 // Those which are imported from home are those who the admin cannot update from his pannel.
 const initialState = { ...resultTemplate, pending: false };
 
 //https://developers.themoviedb.org/3/discover/movie-discover
 
-const listOfWishesMovies = [
+const listOfWishesMovies: TWishListMovies[] = [
 	{
 		title: 'Popular on Netflix',
 		path: 'trending/all/day',
@@ -38,12 +43,13 @@ const listOfWishesMovies = [
 	},
 ];
 
-export const fetchDataNetflix = createAsyncThunk('dataNetflix', async () => {
-	try {
-		const list: any = [];
-		await Promise.all(
-			listOfWishesMovies.map(
-				async (wish: { title: string; path: string; extraFilter?: string }) =>
+export const fetchDataNetflix = createAsyncThunk(
+	'dataNetflix',
+	async (): Promise<TNetflixListMoviesReturned[] | false> => {
+		try {
+			const list: TNetflixListMoviesReturned[] = [];
+			await Promise.all(
+				listOfWishesMovies.map(async (wish: TWishListMovies) =>
 					list.push({
 						title: wish.title,
 						result: await serverGetApi(
@@ -54,17 +60,20 @@ export const fetchDataNetflix = createAsyncThunk('dataNetflix', async () => {
 							null,
 						),
 						path: wish.path,
+						extraFilter: wish.extraFilter ? wish.extraFilter : null,
 					}),
-			),
-		);
-		return list;
-	} catch (error) {
-		console.log(
-			'*** file: redux/midleware, method: fetchDataNetflix, error: ',
-			error,
-		);
-	}
-});
+				),
+			);
+			return list;
+		} catch (error) {
+			console.log(
+				'*** file: redux/midleware, method: fetchDataNetflix, error: ',
+				error,
+			);
+			return false;
+		}
+	},
+);
 
 const data = createSlice({
 	name: 'dataNetflix',
