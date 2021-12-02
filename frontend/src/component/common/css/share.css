@@ -44,7 +44,8 @@ ul {
 	margin: 0;
 }
 
-/*display class*/
+/**** CLASS ****/
+/* Display */
 .flex_row {
 	display: flex;
 } 
@@ -69,6 +70,22 @@ ul {
 	
 }
 
+/* Space & Padding */
+
+.padding_between_minor_element {
+		padding-top: .5rem;
+}
+
+/* Icons */
+.icon_circular {
+	padding: 0.2rem;
+	color: var(--color-1);
+	font-weight: bold;
+	border-radius: 50%;
+	border: 1px solid var(--color-1);
+	box-sizing: content-box !important;
+	background-color: #fd728a;
+}
 /* ----------------------------------------------*/
 /* 02 User preference			                     	 */
 /* ----------------------------------------------*/
