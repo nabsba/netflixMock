@@ -1,4 +1,5 @@
-#video-player, #video-player div {
+#video-player,
+#video-player div {
 	width: 100% !important;
 	height: 100% !important;
 }
