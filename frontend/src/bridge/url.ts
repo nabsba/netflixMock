@@ -10,8 +10,9 @@ const URL_ADDRESSES: {
 		googlePlace: string;
 		netflix: {
 			data: (wish: string, extraFilter?: string | null) => string;
-			image: (id: number | string, extraFilter: string) => string;
-			video: (id: number | string, extraFilter: string) => string;
+			image: (id: number | string, extraFilter?: string) => string;
+			queryVideoEndPoint: (id: number | string, extraFilter?: string) => string;
+			video: (endPoint: string, extraFilter?: string) => string;
 		};
 	};
 	media: { [key: string]: string };
@@ -22,10 +23,14 @@ const URL_ADDRESSES: {
 		netflix: {
 			data: (wish: string, extraFilter = '') =>
 				`https://api.themoviedb.org/3/${wish}?api_key=${process.env.REACT_APP_NETFLIX_KEY}${extraFilter}`,
-			image: (id: number | string, extraFilter = '') =>
-				`https://image.tmdb.org/t/p/original/${id}?api_key=${process.env.REACT_APP_NETFLIX_KEY}${extraFilter}`,
-			video: (id: number | string, extraFilter = '') =>
+			image: (id: number | string, extraFilter) =>
+				`https://image.tmdb.org/t/p/original${id}${
+					extraFilter ? extraFilter : ''
+				}`,
+			queryVideoEndPoint: (id: number | string, extraFilter = '') =>
 				`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_NETFLIX_KEY}${extraFilter}`,
+			video: (endPoint: string) =>
+				`https://www.youtube.com/watch?v=${endPoint}`,
 		},
 	},
 	media: {
