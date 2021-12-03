@@ -1,22 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.css';
-import { Header } from '../../organism';
-import { TReducers } from '../../../../service';
-import { useSelector } from 'react-redux';
-import { Arcturus } from '../../template';
+
+import {
+	initGroupArticleWithNetflixData,
+	TReducers,
+} from '../../../../service';
+import { useDispatch, useSelector } from 'react-redux';
+import { Arcturus, Header } from '../../template';
 
 const Home: React.FC = () => {
+	const dispatch = useDispatch();
 	const {
+		//todo: make sure you have a backup for dataNetflix
 		dataNetflix,
 		dataPages: {
-			home: { header },
+			home: { header, arcturus },
 		},
 	} = useSelector((state: TReducers) => state);
+	useEffect(() => {
+		dispatch(initGroupArticleWithNetflixData(dataNetflix));
+	}, [dataNetflix, dispatch]);
 
 	return (
 		<div id="home-page" style={{ height: '200vh' }}>
 			<Header data={header} />
-			<Arcturus data={'hello'} />
+			<Arcturus data={arcturus} />
 		</div>
 	);
 };
