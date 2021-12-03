@@ -1,0 +1,16 @@
+.icon_with_a_circle_around svg {
+	box-sizing: content-box !important;
+	border: 1px solid var(--color-2);
+	border-radius: 50%;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+	height: 0.5rem;
+	width: 0.5rem;
+	padding: 0.5rem;
+}
+
+.icon_with_a_circle_around:first-child svg:first-child {
+	transform: rotate(90deg);
+	background-color: white;
+	color: var(--color-3_1);
+}
