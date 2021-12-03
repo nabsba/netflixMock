@@ -1,3 +1,4 @@
 import Arcturus from './arcturus/Arcturus';
+import Header from './header/Header';
 
-export { Arcturus };
+export { Arcturus, Header };
