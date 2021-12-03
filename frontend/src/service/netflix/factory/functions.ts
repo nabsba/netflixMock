@@ -26,6 +26,24 @@ const getNewPage = async (infosFetchTest: infosFetchTest) => {
 	}
 };
 
+//todo: finish function
+const getVideoUrl = async (id: number | string) => {
+	try {
+		const result = await serverGetApi(
+			URL_ADDRESSES.api.netflix.queryVideoEndPoint(id, '&language=en'),
+		);
+		if (result.state && result.data[0].key) {
+			const url = URL_ADDRESSES.api.netflix.video(result.data[0].key);
+			return url;
+		}
+	} catch (error) {
+		console.log(
+			'*** file: factory/functions, method: getVideoUrl, error: ',
+			error,
+		);
+		return false;
+	}
+};
 // async () => {
 // 	const infosFetchTest: infosFetchTest = {
 // 		type: TYPE_FETCH.SPECIFIC,
@@ -46,4 +64,4 @@ const getNewPage = async (infosFetchTest: infosFetchTest) => {
 // 	}
 // };
 
-export { getNewPage };
+export { getNewPage, getVideoUrl };
