@@ -1,0 +1,118 @@
+@import '../../../../common/css/variable.css';
+
+.article_two {
+	width: 30vw;
+	transition: transform 0.4s;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.54);
+	border-radius: var(--border-radius);
+	/*todo: mettre ca que pour le premier article_two et mettre le contraire pour le dernier */
+	transform-origin: bottom left;
+}
+
+@media (min-width: 750px) {
+	.article_two {
+		width: 15.5vw;
+	}
+}
+
+.article_two:hover {
+	cursor: pointer;
+	transform: scale(1.5);
+	transition: transform 0.4s;
+	transform-origin: bottom left;
+}
+
+.group_icons_wrapper_part_one,
+.group_icons_wrapper_part_two {
+	height: 100%;
+}
+
+.article_two_part_one {
+	flex: 1;
+	position: relative;
+}
+
+.article_two_part_one .article_two_video_player {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+}
+
+.article_two_part_one img {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.article_two_video_player_volume_icon {
+	position: absolute;
+	top: 60%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+}
+
+@media (min-width: 900px) {
+	.article_two_video_player_volume_icon svg {
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+}
+
+.article_two_part_two {
+	background-color: var(--color-3_1);
+	padding: 0rem;
+	flex: 1;
+	max-height: 0px;
+}
+.article_two:hover .article_two_part_two {
+	max-height: none;
+	padding: 1rem;
+}
+
+.group_icons_wrapper {
+	flex-wrap: wrap;
+}
+@media (min-width: 1700px) {
+	.group_icons_wrapper svg {
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+}
+
+.group_icons_wrapper svg:hover {
+	border: 1px solid var(--color-1);
+}
+
+.article_two_video_player_volume_icon svg:hover {
+	border: 1px solid var(--color-1);
+}
+
+.article_two .article_two_part_two p {
+	color: #59e759;
+	font-weight: bold;
+}
+
+.group_categories {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.group_categories span {
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+}
+
+.article_two_part_one_icon_netflix {
+	height: 1rem;
+	width: 1rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+}
