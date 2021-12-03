@@ -1,12 +1,8 @@
-import { TBrowserInfo } from '..';
-import { THeader } from '../../component/tree/organism/header/type';
+import { TBrowserInfo, TDataPages } from '..';
 import { TDataNetflix } from '../netflix/type';
 
 export type TReducers = {
-	dataPages: {
-		home: { header: THeader };
-		course: any;
-	};
+	dataPages: TDataPages;
 	dataNetflix: TDataNetflix;
 	browserInfo: TBrowserInfo;
 };
