@@ -2,7 +2,7 @@ import { TImageAsComponent } from '../../atom';
 import { TArticleOne } from '../../molecule';
 import TButtonRectangle from '../../molecule/button/rectangle/type';
 
-import { TNavigation } from '../navigation/type';
+import { TNavigation } from '../../organism/navigation/type';
 
 export type THeader = {
 	navigation: TNavigation;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ImageAsComponent } from '../../atom';
 import { ArticleOne } from '../../molecule';
 import ButtonRectangle from '../../molecule/button/rectangle/ButtonRectangle';
-import Navigation from '../navigation/Navigation';
+import Navigation from '../../organism/navigation/Navigation';
 import './style.css';
 import { THeader } from './type';
 
