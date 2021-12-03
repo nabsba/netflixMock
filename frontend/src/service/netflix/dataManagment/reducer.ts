@@ -5,7 +5,6 @@ import {
 } from '../../../bridge/common/requestServer';
 import URL_ADDRESSES from '../../../bridge/url';
 import {
-	TDataNetflix,
 	TInfosForUpdateDataPage,
 	TNetflixListMoviesReturned,
 	TWishListMovies,
@@ -15,7 +14,6 @@ import {
 const initialState = { ...resultTemplate, pending: false };
 
 //https://developers.themoviedb.org/3/discover/movie-discover
-
 const listOfWishesMovies: TWishListMovies[] = [
 	{
 		title: 'Popular on Netflix',
