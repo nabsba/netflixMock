@@ -1,4 +1,4 @@
-import Header from './header/Header';
+import GroupArticleOne from './groupArticle/one/GroupArticleOne';
 import Navigation from './navigation/Navigation';
 
-export { Header, Navigation };
+export { Navigation, GroupArticleOne };
