@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './component/common/css/share.css';
 
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Home } from './component/tree/page';
 import {
 	fetchDataNetflix,
@@ -10,14 +10,11 @@ import {
 	TBrowserInfo,
 	updateInfoDevice,
 } from './service';
-import { TReducers } from './service';
 // Reminder: https://medium.com/@jenniferdobak/react-router-vs-switch-components-2af3a9fc72e
 
 const App: React.FC = () => {
 	const dispatch = useDispatch();
-	const { dataPages, browserInfo } = useSelector((state: TReducers) => state);
-	console.log(browserInfo);
-	console.log(dataPages);
+
 	useEffect(() => {
 		let storage: { used: number | undefined; available: number | undefined } = {
 			used: 0,
