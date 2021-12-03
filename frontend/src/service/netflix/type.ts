@@ -21,9 +21,10 @@ export type TNetflixListMoviesReturned = {
 	extraFilter: string | null;
 };
 export type TWishReturnList = {
-	data: TNetflixMovie[];
+	results: TNetflixMovie[];
 	total_pages: number;
 	total_results: number;
+	page: number;
 };
 export type TNetflixMovie = {
 	adult: boolean;
@@ -44,7 +45,7 @@ export type TNetflixMovie = {
 };
 export type TDataNetflix = {
 	state: boolean;
-	data: TNetflixListMoviesReturned[];
+	data: TWishReturnList;
 	errorCodeServer: string;
 	serverError: boolean;
 	errorMessage: string;
