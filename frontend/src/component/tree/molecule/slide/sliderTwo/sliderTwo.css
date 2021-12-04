@@ -1,3 +1,35 @@
-#slider-two {
-	text-align: center;
+@import'../../../../common/css/variable.css';
+.slick-slider button{
+	 display:none;
+   display: block !important;
+   height: 100% !important;
+	 z-index: 100 !important;
+}
+.slick-slider button:hover {
+	background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.3) 90%, rgba(0, 0, 0, 0) ) !important;
+}
+.slick-next:before, .slick-prev:before { 
+	color: white !important;
+}
+
+.slick-dots, .slick-next, .slick-prev {
+	right: calc(var(--main-space)* -1) !important;
+}
+.slick-prev {
+	left:calc(var(--main-space)* -1) !important;
+}
+
+.slick-next.slick-disabled:before, .slick-prev.slick-disabled:before, .slick-next:before, .slick-prev:before {
+	opacity: 1 !important;
+}
+
+.slick-list {
+	overflow:visible !important;
+}
+@media screen and (min-width: 900px) {
+.slick-dots, .slick-next, .slick-prev {
+    right: Calc(var(--main-space) * -3);
+
+}
+
 }
