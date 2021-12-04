@@ -22,7 +22,7 @@ const Home: React.FC = () => {
 	}, [dataNetflix, dispatch]);
 
 	return (
-		<div id="home-page" style={{ height: '200vh' }}>
+		<div id="home-page">
 			<Header data={header} />
 			<Arcturus data={arcturus} />
 		</div>
