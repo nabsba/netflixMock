@@ -16,9 +16,11 @@ const getSetting = (
 ): Record<string, unknown> => {
 	const setting: { [key: string]: Record<string, unknown> } = {
 		responsive: {
-			dots: true,
+			className: 'center',
+			dots: false,
 			draggable: true,
-			infinite: true,
+			infinite: false,
+			centerPadding: '60px',
 			speed: 500,
 			slidesToShow: 6,
 			slidesToScroll: 6,
@@ -49,14 +51,6 @@ const getSetting = (
 				},
 			],
 		},
-		// center: {
-		// 	className: 'center',
-		// 	centerMode: true,
-		// 	infinite: true,
-		// 	centerPadding: '60px',
-		// 	slidesToShow: 3,
-		// 	speed: 500,
-		// },
 	};
 	const autoPlay = { autoplay: true, autoplaySpeed: 2000, pauseOnHover: true };
 	const settingChosen = animation
