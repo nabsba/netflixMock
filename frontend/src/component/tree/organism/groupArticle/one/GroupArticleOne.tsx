@@ -68,15 +68,12 @@ const GroupArticleOne: React.FC<Props> = ({ data: { articleTwo, data } }) => {
 	}, [data, articleTwo]);
 
 	const displayArticleMovies = (listArticle: TArticleTwo[]) => {
+		/*todo: essaye d'activer le scroll lorsque une image de film apparait en gros (hover). et desactive la quand tu es sorti. Ca permettra peut etre de conserver le scale et d'avoir acces au scroll */
 		const articles: React.ReactNode[] = [];
 		listArticle.map((article: TArticleTwo, index: number) => {
 			articles.push(
 				<ArticleTwo
-					key={
-						APIS.includes(article.videoPlayer.type)
-							? article.videoPlayer.type
-							: index
-					}
+					key={APIS.includes(article.videoPlayer.type) ? index : index}
 					data={article}
 				/>,
 			);
@@ -92,28 +89,17 @@ const GroupArticleOne: React.FC<Props> = ({ data: { articleTwo, data } }) => {
 				}}
 			/>
 		);
-		// return articles;
 	};
 	const displayListWishes = () =>
 		listArticleTwo.map((listArticle: TListArticle) => (
 			<div className="group_article_one_sub_main" key={listArticle.title}>
 				<H1 title={listArticle.title} />
-				<div>{displayArticleMovies(listArticle.allArticleMovie)}</div>
+				<div className="test_nabil">
+					{displayArticleMovies(listArticle.allArticleMovie)}
+				</div>
 			</div>
 		));
 
 	return <div className="group_article_one">{displayListWishes()}</div>;
 };
 export default GroupArticleOne;
-
-{
-	/* <SliderTwo
-	data={{
-		ComponentProps: articles,
-		setting: {
-			method: 'responsive',
-			animation: false,
-		},
-	}}
-/>; */
-}
