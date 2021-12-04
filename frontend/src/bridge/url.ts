@@ -28,7 +28,7 @@ const URL_ADDRESSES: {
 					extraFilter ? extraFilter : ''
 				}`,
 			queryVideoEndPoint: (id: number | string, extraFilter = '') =>
-				`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_NETFLIX_KEY}${extraFilter}`,
+				`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${process.env.REACT_APP_NETFLIX_KEY}${extraFilter}`,
 			video: (endPoint: string) =>
 				`https://www.youtube.com/watch?v=${endPoint}`,
 		},
