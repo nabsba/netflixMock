@@ -32,8 +32,8 @@ const getVideoUrl = async (id: number | string) => {
 		const result = await serverGetApi(
 			URL_ADDRESSES.api.netflix.queryVideoEndPoint(id, '&language=en'),
 		);
-		if (result.state && result.data[0].key) {
-			const url = URL_ADDRESSES.api.netflix.video(result.data[0].key);
+		if (result.state && result.data.results[0].key) {
+			const url = URL_ADDRESSES.api.netflix.video(result.data.results[0].key);
 			return url;
 		}
 	} catch (error) {
