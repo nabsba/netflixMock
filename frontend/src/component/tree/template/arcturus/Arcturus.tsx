@@ -9,8 +9,8 @@ type Props = {
 
 const Arcturus: React.FC<Props> = ({ data: { groupArticleOne } }) => {
 	return (
-		<div id="arturus">
-			<section id="arturus-section-one">
+		<div id="arcturus">
+			<section id="arcturus-section-one">
 				<GroupArticleOne data={groupArticleOne} />
 			</section>
 		</div>
