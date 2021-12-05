@@ -1,0 +1,10 @@
+@import'../../../../common/css/variable.css';
+h3 {
+	color:#E5E5E5;
+	padding:var(--minor-space);
+	padding-left:0rem;
+}
+
+h3:hover {
+	color:var(--color-1);
+}
