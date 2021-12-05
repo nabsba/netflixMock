@@ -10,6 +10,7 @@ import H1 from './title/h1/H1';
 import { TH1 } from './title/h1/type';
 import H2 from './title/h2/H2';
 import { TH2 } from './title/h2/type';
+import H3 from './title/h3/H3';
 
 export {
 	NavLinkAsComponent,
@@ -19,6 +20,7 @@ export {
 	ImageAsComponent,
 	Span,
 	Paragraph,
+	H3,
 };
 
 export type { TH2, TParagraph, TH1, TSpan, TImageAsComponent };
