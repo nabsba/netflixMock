@@ -12,7 +12,7 @@ const arcturus = {
 				],
 				two: [getIcon('ArrowDownBroken')],
 			},
-			icon: 'netflix',
+			icon: getIcon('Netflix'),
 			iconVolume: [getIcon('VolumeHigh'), getIcon('VolumeOff')],
 			type: 'netflix',
 		},
