@@ -1,5 +1,4 @@
-import { TImageAsComponent } from '../../atom';
-import { TArticleOne } from '../../molecule';
+import { TArticleOne, TImageAsComponent } from '../../molecule';
 import TButtonRectangle from '../../molecule/button/rectangle/type';
 
 import { TNavigation } from '../../organism/navigation/type';

@@ -1,5 +1,7 @@
 import React from 'react';
-import { ImageAsComponent, Span } from '../../atom';
+import { Span } from '../../atom';
+import { ImageAsComponent } from '../../molecule';
+
 import './style.css';
 import { TNavigation } from './type';
 
