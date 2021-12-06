@@ -1,0 +1,12 @@
+@import '../../../../common/css/variable.css';
+@import '../../../../common/css/animation.css';
+#loader-image {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: grey;
+	top:0;
+	left:0;
+}
+
+
