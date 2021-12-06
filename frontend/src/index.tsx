@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './App';
 import './component/common/css/share.css';
-import { DATA_TYPE_SERVICE_WORKER, reducers } from './service';
+import { reducers } from './service';
 
 if (
 	'serviceWorker' in navigator &&
@@ -21,12 +21,12 @@ if (
 				console.log('Service Worker Failed to Register', err);
 			});
 	});
-	navigator.serviceWorker.ready.then((registration) => {
-		// Skip waiting ensures that any new versions of a service worker will take over the page and become activated immediately.
-		if (registration && registration.active) {
-			registration.active.postMessage(DATA_TYPE_SERVICE_WORKER.SKIP_WAITING);
-		}
-	});
+	// navigator.serviceWorker.ready.then((registration) => {
+	// 	// Skip waiting ensures that any new versions of a service worker will take over the page and become activated immediately.
+	// 	if (registration && registration.active) {
+	// 		registration.active.postMessage(DATA_TYPE_SERVICE_WORKER.SKIP_WAITING);
+	// 	}
+	// });
 }
 
 const rootElement = document.getElementById('root');
