@@ -1,9 +1,18 @@
 import { getBrowserInfo, updateInfoDevice } from './browserInfo/reducer';
 import { TBrowserInfo } from './browserInfo/type';
-import reducers from './Common/reducer';
-import { TReducers } from './Common/type';
+import { APIS } from './Common/constant';
+import {
+	completeArticleTwoWithDataReceived,
+	doWeRequireANewPage,
+	getNewPage,
+	getPrototypeDuringPending,
+} from './Common/logic/functions';
+import reducers from './Common/reducer/reducer';
+import { TReducers } from './Common/reducer/type';
+import { INFOS_PAGE_NETFLIX, PROTOTYPE } from './netflix/constant';
 import { fetchDataNetflix } from './netflix/dataManagment/reducer';
-import { getVideoUrl } from './netflix/factory/functions';
+import { getVideoUrl } from './netflix/logic/getter';
+
 import {
 	dataBackup,
 	getDatasPages,
@@ -11,10 +20,7 @@ import {
 } from './pages/Common/dataManagment/reducer';
 import TDataPages from './pages/Common/dataManagment/type';
 
-import { DATA_TYPE_SERVICE_WORKER } from './wpa/serviceWorker/data';
-
 export {
-	DATA_TYPE_SERVICE_WORKER,
 	reducers,
 	fetchDataNetflix,
 	updateInfoDevice,
@@ -23,5 +29,12 @@ export {
 	getDatasPages,
 	initGroupArticleWithNetflixData,
 	getVideoUrl,
+	APIS,
+	completeArticleTwoWithDataReceived,
+	doWeRequireANewPage,
+	getPrototypeDuringPending,
+	INFOS_PAGE_NETFLIX,
+	getNewPage,
+	PROTOTYPE,
 };
 export type { TReducers, TBrowserInfo, TDataPages };

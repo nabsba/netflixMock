@@ -4,15 +4,18 @@ import TArticleTwo from './article/two/type';
 import ButtonRectangle from './button/rectangle/ButtonRectangle';
 import TGroupIcon from './groupIcon/type';
 import Hd from './hd/Hd';
+import ImageAsComponent from './image/Image';
+import { TImageAsComponent } from './image/type';
 import TMinorInformationVideo from './minorInformationVideo/type';
 import TVideoPlayer from './video/type';
 import VideoPlayer from './video/VideoPlayer';
 
-export { ArticleOne, Hd, ButtonRectangle, VideoPlayer };
+export { ArticleOne, Hd, ButtonRectangle, VideoPlayer, ImageAsComponent };
 export type {
 	TArticleOne,
 	TGroupIcon,
 	TMinorInformationVideo,
 	TVideoPlayer,
 	TArticleTwo,
+	TImageAsComponent,
 };
