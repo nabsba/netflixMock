@@ -1,3 +1,10 @@
 /* .group_article_one_sub_main {
 	display:flex;
 } */
+
+.group_article_one_sub_main_articles_wrapper .article_two:hover:first-child {
+	transform-origin: bottom left;
+}
+.group_article_one_sub_main_articles_wrapper .article_two:hover:last-child {
+	transform-origin: bottom right;
+}
