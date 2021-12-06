@@ -57,3 +57,16 @@ export type TWishListMovies = {
 	path: string;
 	extraFilter?: string;
 };
+
+export type TInfosFetchTest = {
+	type: string;
+	specific: {
+		pageList: string;
+		path: string;
+	};
+};
+
+export type TInfosPage = {
+	path: string;
+	page: number;
+};

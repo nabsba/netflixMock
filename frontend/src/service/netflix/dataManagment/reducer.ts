@@ -1,53 +1,33 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice, current } from '@reduxjs/toolkit';
 import {
 	resultTemplate,
 	serverGetApi,
 } from '../../../bridge/common/requestServer';
 import URL_ADDRESSES from '../../../bridge/url';
 import {
-	TInfosForUpdateDataPage,
+	TDataNetflix,
+	TInfosPage,
 	TNetflixListMoviesReturned,
 	TWishListMovies,
 } from '../type';
+import {
+	INFOS_PAGE_NETFLIX,
+	LIST_OF_WISHES_CATEGORIES_MOVIES,
+	PROTOTYPE,
+} from '../constant';
 
 // Those which are imported from home are those who the admin cannot update from his pannel.
 const initialState = { ...resultTemplate, pending: false };
 
 //https://developers.themoviedb.org/3/discover/movie-discover
-const listOfWishesMovies: TWishListMovies[] = [
-	{
-		title: 'Popular on Netflix',
-		path: 'trending/all/day',
-	},
-	{
-		title: 'Our guest',
-		path: 'discover/movie',
-	},
-	{
-		title: 'Top 10 in the uk',
-		path: 'movie/popular',
-		extraFilter: '&sort_by=popularity.asc',
-	},
-	{
-		title: 'popular on Netflix',
-		path: 'discover/movie',
-		extraFilter:
-			'&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=1&with_watch_monetization_types=flatrate',
-	},
-	{
-		title: 'Actions movies',
-		path: 'discover/movie',
-		extraFilter: '&with_genres=action',
-	},
-];
 
 export const fetchDataNetflix = createAsyncThunk(
-	'dataNetflix',
+	'dataNetflix/init',
 	async (): Promise<TNetflixListMoviesReturned[] | false> => {
 		try {
 			const list: TNetflixListMoviesReturned[] = [];
 			await Promise.all(
-				listOfWishesMovies.map(async (wish: TWishListMovies) =>
+				LIST_OF_WISHES_CATEGORIES_MOVIES.map(async (wish: TWishListMovies) =>
 					list.push({
 						title: wish.title,
 						result: await serverGetApi(
@@ -73,20 +53,42 @@ export const fetchDataNetflix = createAsyncThunk(
 	},
 );
 
+export const getNewPageNetFlix = createAsyncThunk(
+	'dataNetflix/getPage',
+	async (infosPage: TInfosPage): Promise<any | false> => {
+		try {
+			console.log('reducer getNewPageNetFlix');
+			const { path, page } = infosPage;
+			const newPage = await serverGetApi(
+				URL_ADDRESSES.api.netflix.data(path, `&page=${page}`),
+				null,
+			);
+			const pagePayload = {
+				path,
+				newPage,
+			};
+			return pagePayload;
+		} catch (error) {
+			console.log(
+				'*** file: redux/midleware, method: fetchDataNetflix, error: ',
+				error,
+			);
+			return false;
+		}
+	},
+);
 const data = createSlice({
 	name: 'dataNetflix',
 	initialState,
 	reducers: {
-		updateDataPage: (
-			state: any,
-			action: { payload: TInfosForUpdateDataPage },
-		) => {
-			state.data.map((element: any) => {
-				if (element.path === action.payload.path) {
-					element.result.data.results = element.result.data.results.concat(
-						action.payload.newPage.results,
-					);
-					element.result.data.page = action.payload.newPage.page;
+		addPrototype: (state: any, action: { payload: { path: string } }) => {
+			const { path } = action.payload;
+			const prototypes = PROTOTYPE.PAGE();
+			state.data.map((element: TNetflixListMoviesReturned) => {
+				if (element.path === path) {
+					element.result.data.results =
+						element.result.data.results.concat(prototypes);
+					element.result.data.page = element.result.data.page + 1;
 				}
 			});
 		},
@@ -110,9 +112,29 @@ const data = createSlice({
 			state.state = false;
 			state.pending = true;
 		});
+		builder.addCase(
+			getNewPageNetFlix.fulfilled,
+			/*eslint-disable-next-line  @typescript-eslint/no-explicit-any*/
+			(state, action: { payload: { path: string; newPage: TDataNetflix } }) => {
+				const { path, newPage } = action.payload;
+				state.data.map((element: TNetflixListMoviesReturned) => {
+					if (element.path === path && newPage.state) {
+						const { results } = newPage.data;
+						element.result.data.results =
+							element.result.data.results.concat(results);
+						element.result.data.page = newPage.data.page;
+					}
+				});
+			},
+		);
+		builder.addCase(getNewPageNetFlix.rejected, (state) => {
+			console.log('error');
+		});
+		// builder.addCase(getNewPageNetFlix.pending, (state) => {
+
+		// });
 	},
 });
-const { updateDataPage } = data.actions;
 const dataNetflix = data.reducer;
-
-export { dataNetflix, updateDataPage };
+const { addPrototype } = data.actions;
+export { dataNetflix, addPrototype };
