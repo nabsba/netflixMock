@@ -19,10 +19,16 @@ const CONFIG_VIDEO: { [key: string]: any } = {
 	},
 	local: {},
 };
-const VideoPlayer: React.FC<Props> = ({ data: { url, type, isVolumeUp } }) => {
+const VideoPlayer: React.FC<Props> = ({
+	data: { url, typeConfiguration, isVolumeUp },
+}) => {
 	return (
 		<div id="video-player">
-			<ReactPlayer url={url} volume={isVolumeUp} config={CONFIG_VIDEO[type]} />
+			<ReactPlayer
+				url={url}
+				volume={isVolumeUp}
+				config={CONFIG_VIDEO[typeConfiguration]}
+			/>
 		</div>
 	);
 };
