@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import getImg from '../../../asset';
-import { ImageAsComponent } from '../../tree/atom';
+
 import {
 	ArrowDown,
 	ArrowDownBroken,
@@ -16,6 +16,7 @@ import {
 	VolumeOff,
 } from '../../tree/atom/icon';
 import IconWrapper from '../../tree/atom/icon/IconWrapper';
+import { ImageAsComponent } from '../../tree/molecule';
 
 // https://react-icons.github.io/react-icons/icons?name=fa
 

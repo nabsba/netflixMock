@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageAsComponent from '../image/Image';
+import { ImageAsComponent } from '../../molecule';
 
 const ProfileIcon: React.FC = () => {
 	return (
