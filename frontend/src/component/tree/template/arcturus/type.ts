@@ -5,6 +5,7 @@ import { TArticleTwo } from '../../molecule';
 // 	articleTwo: TArticleTwo;
 // };
 type TArcturus = {
+	type: string;
 	groupArticleOne: {
 		articleTwo: TArticleTwo;
 		data: TDataNetflix;
