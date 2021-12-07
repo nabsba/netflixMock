@@ -24,9 +24,8 @@ const URL_ADDRESSES: {
 			data: (wish: string, extraFilter = '') =>
 				`https://api.themoviedb.org/3/${wish}?api_key=${process.env.REACT_APP_NETFLIX_KEY}${extraFilter}`,
 			image: (id: number | string, extraFilter) =>
-				`https://image.tmdb.org/t/p/original${id}${
-					extraFilter ? extraFilter : ''
-				}`,
+				// `https://image.tmdb.org/t/p/original${id}${
+				`https://image.tmdb.org/t/p/w300${id}${extraFilter ? extraFilter : ''}`,
 			queryVideoEndPoint: (id: number | string, extraFilter = '') =>
 				`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${process.env.REACT_APP_NETFLIX_KEY}${extraFilter}`,
 			video: (endPoint: string) =>
