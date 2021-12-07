@@ -17,13 +17,13 @@ html {
 	-ms-user-select: none;
 	user-select: none;
 }
-@media (max-width: 2560px) {
+@media (min-width: 1600px) {
 	html {
 		font-size: 16px;
 	}
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1600px) {
 	html {
 		font-size: 13px;
 	}
