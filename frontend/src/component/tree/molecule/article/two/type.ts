@@ -1,5 +1,9 @@
-import { TGroupIcon, TMinorInformationVideo, TVideoPlayer } from '../..';
-import { TImageAsComponent } from '../../../atom';
+import {
+	TGroupIcon,
+	TImageAsComponent,
+	TMinorInformationVideo,
+	TVideoPlayer,
+} from '../..';
 
 type TArticleTwo = {
 	iconGroup: {
@@ -12,6 +16,7 @@ type TArticleTwo = {
 	videoPlayer: TVideoPlayer;
 	imagePresentation: TImageAsComponent;
 	icon: string;
+	path?: string;
 	type?: string;
 };
 

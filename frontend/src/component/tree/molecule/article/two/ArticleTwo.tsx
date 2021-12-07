@@ -29,7 +29,7 @@ const ArticleTwo: React.FC<Props> = ({
 	const GroupCategories = informations.map((information: string) => (
 		<Span data={information} key={information} />
 	));
-
+	videoPlayer.isVolumeUp = isVolumeUp ? 1 : 0;
 	{
 		/*todo: remove this and place it to service */
 	}
@@ -69,14 +69,10 @@ const ArticleTwo: React.FC<Props> = ({
 				}}
 				onMouseLeave={() => setIsArticleOnHover(false)}
 			>
-				{/* <ImageAsComponent data={image} /> */}
 				<ImageAsComponent data={imagePresentation} />
 				{IsArticleOnHover && (
 					<div className="article_two_video_player">
-						{/* todo: get video player on hover only not per default */}
-						{/* <VideoPlayer data={linkVideo} /> */}
-
-						{/* {videoUrl && <VideoPlayer data={videoPlayer} />} */}
+						{videoUrl && <VideoPlayer data={videoPlayer} />}
 						<div
 							className="article_two_video_player_volume_icon icon_with_a_circle_around"
 							onClick={() => setIsVolumeUp(!isVolumeUp)}
@@ -85,8 +81,7 @@ const ArticleTwo: React.FC<Props> = ({
 						</div>
 					</div>
 				)}
-				{/*todo: remove netflix name from class */}
-				<div className="article_two_part_one_icon_netflix">{icon}</div>
+				<div className="article_two_part_one_icon_">{icon}</div>
 			</div>
 			<div className="article_two_part_two">
 				<div className="group_icons_wrapper flex_row_between">
@@ -114,37 +109,3 @@ const ArticleTwo: React.FC<Props> = ({
 };
 
 export default ArticleTwo;
-
-// const icons = [
-// 	getIcon('Triangle'),
-// 	getIcon('Plus'),
-// 	getIcon('ThumbsUp'),
-// 	getIcon('ThumbsDown'),
-// 	getIcon('ArrowDownBroken'),
-// 	getIcon('Netflix'),
-// ];
-// const iconGroup = {
-// 	one: [
-// 		getIcon('Triangle'),
-// 		getIcon('Plus'),
-// 		getIcon('ThumbsUp'),
-// 		getIcon('ThumbsDown'),
-// 	],
-// 	two: [getIcon('ArrowDownBroken')],
-// };
-// const IconsVolumes = [getIcon('VolumeHigh'), getIcon('VolumeOff')];
-// const linkVideo = {
-// 	url: 'https://www.youtube.com/watch?v=nyc6RJEEe0U',
-// 	type: 'youtube',
-// 	name: 'ge',
-// 	date: '21/01/202',
-// 	isVolumeUp: isVolumeUp ? 1 : 0,
-// };
-// const image = {
-// 	src: 'https://occ-0-475-1167.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABQHPJ2jrCTdo1LCvqdDYLYeX1YDLNpvS8oe8OribopJ9em2i-HKFaidmFmjcd0MgAjqNUI5sZSgoSlC1F0UCDtL39gN2.webp?r=f3a',
-// 	alt: 'arcana',
-// };
-// const minorInformation = {
-// 	number: 13,
-// 	time: '12h30',
-// };
