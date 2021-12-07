@@ -15,7 +15,6 @@ color:var(--color-2);
 
 .foot_top_sub_wrapper {
 	flex-basis: 40vw;
-	font-weight: var(--font-weight_1);
 }
 
 @media (min-width: 900px) {
