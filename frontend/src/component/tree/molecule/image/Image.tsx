@@ -24,7 +24,7 @@ const ImageAsComponent: React.FC<Props> = ({
 		<img
 			className={classes}
 			onLoad={(): void => setImageLoaded(true)}
-			loading="lazy"
+			// loading="lazy"
 			src={category && name ? getImg(category, name) : src}
 			alt={alt}
 		/>
