@@ -6,11 +6,19 @@ import TGroupIcon from './groupIcon/type';
 import Hd from './hd/Hd';
 import ImageAsComponent from './image/Image';
 import { TImageAsComponent } from './image/type';
+import NetflixLoader from './loader/netflix/Netflix';
 import TMinorInformationVideo from './minorInformationVideo/type';
 import TVideoPlayer from './video/type';
 import VideoPlayer from './video/VideoPlayer';
 
-export { ArticleOne, Hd, ButtonRectangle, VideoPlayer, ImageAsComponent };
+export {
+	ArticleOne,
+	Hd,
+	ButtonRectangle,
+	VideoPlayer,
+	ImageAsComponent,
+	NetflixLoader,
+};
 export type {
 	TArticleOne,
 	TGroupIcon,

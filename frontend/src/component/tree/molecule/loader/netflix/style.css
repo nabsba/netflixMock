@@ -1,0 +1,14 @@
+#loader-netflix {
+	display:flex;
+	height: 100vh;
+}
+
+#loader-netflix div {
+margin:auto;
+height:10rem;
+}
+#loader-netflix div img {
+	height:100%;
+}
+
+
