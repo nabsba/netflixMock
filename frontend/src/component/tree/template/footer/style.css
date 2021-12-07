@@ -1,0 +1,43 @@
+@import'../../../common/css/variable.css';
+
+#footer {
+	padding-left: var(--main-space);
+	padding-right: var(--main-space);
+	margin-top: 5rem;
+color:var(--color-2);
+}
+
+.footer_top {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.foot_top_sub_wrapper {
+	flex-basis: 40vw;
+	font-weight: var(--font-weight_1);
+}
+
+@media (min-width: 900px) {
+	.foot_top_sub_wrapper {
+		flex-basis: 23vw;
+	}
+}
+
+.foot_top_sub_wrapper span {
+	display: block;
+	padding-top: .7rem;
+	padding-bottom: .7rem;
+}
+
+.footer_bottom span {
+padding:1rem;
+border: 1px solid var(--color-2);
+display:inline-block;
+margin-top:2rem;
+}
+.footer_bottom p {
+	margin-top: 1rem;
+	margin-bottom:1rem;
+}
+
