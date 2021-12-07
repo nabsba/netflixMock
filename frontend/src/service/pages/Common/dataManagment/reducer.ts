@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import * as dataBackup from '../datas/backup/data.json';
-import { header } from '../datas/datasCommon';
+import { header, footer } from '../datas/datasCommon';
 import { arcturus } from '../../home/data';
 
 // Those which are imported from home are those who the admin cannot update from his pannel.
@@ -8,6 +8,7 @@ const initialState = {
 	home: {
 		header,
 		arcturus,
+		footer,
 	},
 };
 

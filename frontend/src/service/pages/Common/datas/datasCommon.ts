@@ -1,4 +1,5 @@
 import getIcon from '../../../../component/factory/icon/Icon';
+import { TFooter } from '../../../../component/tree/template';
 import { THeader } from '../../../../component/tree/template/header/type';
 
 const header: THeader = {
@@ -41,4 +42,19 @@ const header: THeader = {
 	},
 };
 
-export { header };
+const footer: TFooter = {
+	top: {
+		list: [
+			['Audio and Subtitles', 'Investor Relations', 'Legal Notices'],
+			['Audio Description', 'Jobs', 'Cookie Preferences'],
+			['Gift Cards', 'Term of Use', 'Corporate Information'],
+			['Media Center', 'Privacy', 'Contact Us'],
+		],
+	},
+	bottom: {
+		paragraph:
+			'© 1997-2021 Netflix, Inc.<!-- -->&lrm; {de7ecc95-19aa-4a03-93a2-71f220c7f533}',
+		span: 'Service span',
+	},
+};
+export { header, footer };
