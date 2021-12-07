@@ -53,8 +53,8 @@ const footer: TFooter = {
 	},
 	bottom: {
 		paragraph:
-			'© 1997-2021 Netflix, Inc.<!-- -->&lrm; {de7ecc95-19aa-4a03-93a2-71f220c7f533}',
-		span: 'Service span',
+			'© 1997-2021 Netflix, Inc. {de7ecc95-19aa-4a03-93a2-71f220c7f533}',
+		span: 'Service',
 	},
 };
 export { header, footer };
