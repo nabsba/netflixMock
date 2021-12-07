@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { VideoPlayer } from '../..';
+import { ImageAsComponent, VideoPlayer } from '../..';
 import { getVideoUrl } from '../../../../../service';
-import { ImageAsComponent, Paragraph, Span } from '../../../atom';
+import { Paragraph, Span } from '../../../atom';
 import GroupIcon from '../../groupIcon/GroupIcon';
 import MinorInformationVideo from '../../minorInformationVideo/MinorInformationVideo';
 import './style.css';
@@ -25,6 +25,7 @@ const ArticleTwo: React.FC<Props> = ({
 	const [IsArticleOnHover, setIsArticleOnHover] = useState(false);
 	const [isVolumeUp, setIsVolumeUp] = useState(true);
 	const informations = ['habile', 'impertinent', 'palpitant'];
+	const [videoUrl, setVideoUrl] = useState('');
 	const GroupCategories = informations.map((information: string) => (
 		<Span data={information} key={information} />
 	));
@@ -40,6 +41,7 @@ const ArticleTwo: React.FC<Props> = ({
 					const url = await getVideoUrl(id);
 					if (url) {
 						videoPlayer.url = url;
+						setVideoUrl(url);
 						return url;
 					} else {
 						{
@@ -74,7 +76,7 @@ const ArticleTwo: React.FC<Props> = ({
 						{/* todo: get video player on hover only not per default */}
 						{/* <VideoPlayer data={linkVideo} /> */}
 
-						{videoPlayer.url && <VideoPlayer data={videoPlayer} />}
+						{/* {videoUrl && <VideoPlayer data={videoPlayer} />} */}
 						<div
 							className="article_two_video_player_volume_icon icon_with_a_circle_around"
 							onClick={() => setIsVolumeUp(!isVolumeUp)}
