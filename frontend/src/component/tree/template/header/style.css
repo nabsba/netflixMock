@@ -1,3 +1,4 @@
+@import'../../../common/css/variable.css';
 .header {
 	position: relative;
 	min-height: 60vh;
@@ -9,7 +10,15 @@
 	width: 100%;
 	z-index: -10;
 }
-
+.header_description_icon_and_title img {
+	height:2rem;
+}
+.header_description_icon_and_title h3 {
+	padding-left: .5rem;
+	color:var(	--color-2);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
 .header_image_background img:first-child() {
 	height: 100%;
 	width: 100%;
@@ -30,6 +39,7 @@
 	flex-direction: column;
 	justify-content: space-around;
 	padding-left: var(--main-space);
+	    position: relative;
 }
 
 @media only screen and (min-width: 900px) {
@@ -58,4 +68,15 @@
 .header_description_button button {
 	margin-right: 1rem;
 	margin-bottom: 1rem;
+}
+
+.header #video-player {
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+.shrunk_header_description {
+	transform:scale(.7);
+	transition: all .5s 1s;
+	transform-origin: bottom left;
 }
