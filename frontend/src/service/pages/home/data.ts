@@ -16,7 +16,7 @@ const arcturus = {
 			iconVolume: [getIcon('VolumeHigh'), getIcon('VolumeOff')],
 			type: 'netflix',
 		},
-		data: [],
+		data: null,
 		type: 'movies',
 	},
 };
