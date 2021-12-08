@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ImageAsComponent, VideoPlayer } from '../..';
-import { getVideoUrl } from '../../../../../service';
+import { getUrlForVideo } from '../../../../../service/Common/logic/functions';
 import { Paragraph, Span } from '../../../atom';
 import GroupIcon from '../../groupIcon/GroupIcon';
 import MinorInformationVideo from '../../minorInformationVideo/MinorInformationVideo';
@@ -30,43 +30,26 @@ const ArticleTwo: React.FC<Props> = ({
 		<Span data={information} key={information} />
 	));
 	videoPlayer.isVolumeUp = isVolumeUp ? 1 : 0;
-	{
-		/*todo: remove this and place it to service */
-	}
-	const getUrl = async (type: string | undefined, id?: number | string) => {
+	const handleMouseEnter = async () => {
 		try {
-			switch (type) {
-				case 'netflix':
-					if (!id) return;
-					const url = await getVideoUrl(id);
-					if (url) {
-						videoPlayer.url = url;
-						setVideoUrl(url);
-						return url;
-					} else {
-						{
-							/*todo: could send a message through discord with the id of the video where the trailer is not available - For now we just return a default add from netflix*/
-							/*todo: remove the hardcoding*/
-						}
-						return 'https://www.youtube.com/watch?v=sY2djp46FeY';
-					}
-
-				default:
-					return '';
+			setIsArticleOnHover(true);
+			if (videoPlayer.id) {
+				const url = await getUrlForVideo(type, videoPlayer.id);
+				videoPlayer.url = url;
+				setVideoUrl(url);
 			}
 		} catch (error) {
-			return false;
+			console.log(
+				'file: ArticleTwo.tsx, method: handleMouseEnter, error: ',
+				error,
+			);
 		}
 	};
-
 	return (
 		<div className="article_two">
 			<div
 				className="article_two_part_one"
-				onMouseEnter={() => {
-					setIsArticleOnHover(true);
-					getUrl(type, videoPlayer.id);
-				}}
+				onMouseEnter={handleMouseEnter}
 				onMouseLeave={() => setIsArticleOnHover(false)}
 			>
 				<ImageAsComponent data={imagePresentation} />
