@@ -40,6 +40,8 @@
 	justify-content: space-around;
 	padding-left: var(--main-space);
 	    position: relative;
+	transform: scale(1.1);
+	transition: transform .5s;
 }
 
 @media only screen and (min-width: 900px) {
@@ -76,7 +78,7 @@
 	width:100%;
 }
 .shrunk_header_description {
-	transform:scale(.7);
+	transform:scale(.8);
 	transition: all .5s 1s;
 	transform-origin: bottom left;
 }
