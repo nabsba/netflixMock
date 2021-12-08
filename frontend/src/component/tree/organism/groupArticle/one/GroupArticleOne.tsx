@@ -17,7 +17,7 @@ type Props = {
 const GroupArticleOne: React.FC<Props> = ({ data: { articleTwo, data } }) => {
 	const [listArticleTwo, setListArticleTwo] = useState<any[]>([]);
 	useEffect(() => {
-		if (data && data.state && articleTwo.type) {
+		if (data && data.length > 0 && articleTwo.type) {
 			const listArticleTwo = completeArticleTwoWithDataReceived(
 				articleTwo.type,
 				data,
@@ -44,6 +44,7 @@ const GroupArticleOne: React.FC<Props> = ({ data: { articleTwo, data } }) => {
 				/>,
 			);
 		});
+
 		return (
 			<SliderTwo
 				data={{

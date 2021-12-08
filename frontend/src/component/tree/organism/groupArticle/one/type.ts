@@ -3,7 +3,7 @@ import { TArticleTwo } from '../../../molecule';
 
 type TGroupArticleOne = {
 	articleTwo: TArticleTwo;
-	data?: Result;
+	data?: any;
 };
 
 export type TListArticle = {
