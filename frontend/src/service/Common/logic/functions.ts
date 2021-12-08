@@ -1,14 +1,13 @@
-import { Result } from '../../../Common/type/type';
 import { TArticleTwo } from '../../../component/tree/molecule';
 import { TSlideInformation } from '../../../component/tree/organism';
 import { INFOS_PAGE_NETFLIX, PROTOTYPE } from '../../netflix/constant';
-import { getNewPageNetFlix } from '../../netflix/dataManagment/reducer';
 import { appendDataToArticleTwoNetflixData } from '../../netflix/logic/functions';
+import { getVideoUrl } from '../../netflix/logic/getter';
 import { INFOS_PAGE_DEFAULT } from '../constant';
 
 const completeArticleTwoWithDataReceived = (
 	type: string,
-	data: Result,
+	data: [],
 	articleTwo: TArticleTwo,
 ): any[] => {
 	switch (type) {
@@ -34,17 +33,13 @@ const doWeRequireANewPage = (
 			numberOfItemsPerPage = INFOS_PAGE_DEFAULT.NUMBER_OF_ITEMS_IN_PAGE;
 	}
 	const totalOfSlides = slideInformation.page * numberOfItemsPerPage;
-	console.log(totalOfSlides, 'total of slides');
 	const slidesRemaining = totalOfSlides - slideInformation.slideSeen;
-	console.log(slidesRemaining, 'slides remaining');
 	const isUserSlideBack =
 		slideInformation.oldSlide === slideInformation.slideSeen;
 	const isEndOfPage = slidesRemaining === indiceToTriggerNextPage;
-	console.log(isEndOfPage, 'is end of page');
 	const result = isEndOfPage && !isUserSlideBack;
 	return result;
 };
-
 const getPrototypeDuringPending = (type: string) => {
 	switch (type) {
 		case 'netflix':
@@ -64,9 +59,31 @@ const getNewPage = async (type: string) => {
 		}
 	} catch (error) {}
 };
+const getUrlForVideo = async (
+	type: string | undefined,
+	id: number | string,
+): Promise<string> => {
+	try {
+		switch (type) {
+			case 'netflix':
+				const url = await getVideoUrl(id);
+				return url;
+			default:
+				return ' ';
+		}
+	} catch (error) {
+		console.log(
+			'file: Common/logic/functions, method: getUrlForVideo, error: ',
+			error,
+		);
+		return '';
+	}
+};
+
 export {
 	completeArticleTwoWithDataReceived,
 	doWeRequireANewPage,
 	getNewPage,
 	getPrototypeDuringPending,
+	getUrlForVideo,
 };
