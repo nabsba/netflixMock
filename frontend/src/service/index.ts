@@ -9,7 +9,13 @@ import {
 } from './Common/logic/functions';
 import reducers from './Common/reducer/reducer';
 import { TReducers } from './Common/reducer/type';
-import { INFOS_PAGE_NETFLIX, PROTOTYPE } from './netflix/constant';
+import { randomIntFromInterval } from './Common/tools/functions';
+import {
+	IMAGE_SIZE,
+	INFOS_PAGE_NETFLIX,
+	PROTOTYPE,
+	VIDEO_PLAYER,
+} from './netflix/constant';
 import { fetchDataNetflix } from './netflix/dataManagment/reducer';
 import { getVideoUrl } from './netflix/logic/getter';
 
@@ -36,5 +42,8 @@ export {
 	INFOS_PAGE_NETFLIX,
 	getNewPage,
 	PROTOTYPE,
+	IMAGE_SIZE,
+	VIDEO_PLAYER,
+	randomIntFromInterval,
 };
 export type { TReducers, TBrowserInfo, TDataPages };
