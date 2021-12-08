@@ -143,9 +143,9 @@ height:100%;
 	border: 0;
 	height: var(--share-height);
 	width: 100%;
-	transition: all 200ms ease-in;
+	/* transition: all 200ms ease-in;
 	transform: scale(1);
-	vertical-align: top;
+	vertical-align: top; */
 	/* added */
 }
 
