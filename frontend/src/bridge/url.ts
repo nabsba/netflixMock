@@ -1,6 +1,9 @@
 // Local server
 // const URL_ADDRESS = 'https://localhost:3001';
 // fake api server
+
+import { IMAGE_SIZE } from '../service';
+
 // do not forget to write: npx json-server db.json --routes routes.json
 const URL_ADDRESS = 'http://localhost:3000';
 
@@ -10,7 +13,11 @@ const URL_ADDRESSES: {
 		googlePlace: string;
 		netflix: {
 			data: (wish: string, extraFilter?: string | null) => string;
-			image: (id: number | string, extraFilter?: string) => string;
+			image: (
+				id: number | string,
+				size: string,
+				extraFilter?: string,
+			) => string;
 			queryVideoEndPoint: (id: number | string, extraFilter?: string) => string;
 			video: (endPoint: string, extraFilter?: string) => string;
 		};
@@ -23,9 +30,11 @@ const URL_ADDRESSES: {
 		netflix: {
 			data: (wish: string, extraFilter = '') =>
 				`https://api.themoviedb.org/3/${wish}?api_key=${process.env.REACT_APP_NETFLIX_KEY}${extraFilter}`,
-			image: (id: number | string, extraFilter) =>
+			image: (id: number | string, size = IMAGE_SIZE.small, extraFilter) =>
 				// `https://image.tmdb.org/t/p/original${id}${
-				`https://image.tmdb.org/t/p/w300${id}${extraFilter ? extraFilter : ''}`,
+				`https://image.tmdb.org/t/p/${size}${id}${
+					extraFilter ? extraFilter : ''
+				}`,
 			queryVideoEndPoint: (id: number | string, extraFilter = '') =>
 				`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${process.env.REACT_APP_NETFLIX_KEY}${extraFilter}`,
 			video: (endPoint: string) =>

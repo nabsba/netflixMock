@@ -5,3 +5,6 @@ Environment Code:
  - Prettier: format your code.
  - Webpack: bundle/package your code.
 - https://jsonplaceholder.typicode.com/    fake datas
+
+intersection observer (+ encapsulation logic):  https://dev.to/producthackers/intersection-observer-using-react-49ko
+https://stackoverflow.com/questions/64608624/how-to-divide-business-logic-in-one-react-component
