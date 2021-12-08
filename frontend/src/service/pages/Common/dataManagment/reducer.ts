@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import * as dataBackup from '../datas/backup/data.json';
 import { header, footer } from '../datas/datasCommon';
-import { arcturus } from '../../home/data';
+import { arcturus, errorBundaryFallbackType } from '../../home/data';
 import { TNetflixMovie } from '../../../netflix/type';
 import { URL_ADDRESSES } from '../../../../bridge';
 import { IMAGE_SIZE, randomIntFromInterval, VIDEO_PLAYER } from '../../..';
@@ -12,6 +12,7 @@ const initialState = {
 		header,
 		arcturus,
 		footer,
+		errorBundaryFallbackType,
 	},
 };
 
@@ -33,7 +34,6 @@ const data = createSlice({
 						payload.data[randomList].result.data.results.length - 1,
 					),
 				);
-				//todo: check a random index in results not only 0. like this when you refresh it changes.
 				const movie: TNetflixMovie =
 					payload.data[randomList].result.data.results[randomMovie];
 				state.home.header = {

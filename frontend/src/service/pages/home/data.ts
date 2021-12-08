@@ -1,4 +1,5 @@
 import getIcon from '../../../component/factory/icon/Icon';
+import TErrorBundaryFallbackType from './type';
 
 const arcturus = {
 	groupArticleOne: {
@@ -20,5 +21,11 @@ const arcturus = {
 		type: 'movies',
 	},
 };
+const errorBundaryFallbackType: TErrorBundaryFallbackType = {
+	home: 'default',
+	header: 'default',
+	template: 'default',
+	footer: 'default',
+};
 
-export { arcturus };
+export { arcturus, errorBundaryFallbackType };

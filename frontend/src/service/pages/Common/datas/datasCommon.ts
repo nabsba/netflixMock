@@ -45,7 +45,6 @@ const header: THeader = {
 		isVolumeUp: 1,
 	},
 };
-
 const footer: TFooter = {
 	top: {
 		list: [
@@ -61,4 +60,5 @@ const footer: TFooter = {
 		span: 'Service',
 	},
 };
+
 export { header, footer };
