@@ -10,14 +10,8 @@ import './slick-theme.min.css';
 import './sliderTwo.css';
 import { TSliderTwo } from './type';
 import { TSlideInformation } from '../../../organism';
-import {
-	doWeRequireANewPage,
-	getPrototypeDuringPending,
-} from '../../../../../service';
-import {
-	addPrototype,
-	getNewPageNetFlix,
-} from '../../../../../service/netflix/dataManagment/reducer';
+import { doWeRequireANewPage } from '../../../../../service';
+import { getNewPageNetFlix } from '../../../../../service/netflix/dataManagment/reducer';
 import { useDispatch } from 'react-redux';
 
 type Props = {
@@ -109,7 +103,6 @@ const SliderTwo: React.FC<Props> = ({
 				path,
 				page: slideInformation.page + 1,
 			};
-			// dispatch(addPrototype({ path }));
 			dispatch(getNewPageNetFlix(infosPage));
 		}
 	}, [
