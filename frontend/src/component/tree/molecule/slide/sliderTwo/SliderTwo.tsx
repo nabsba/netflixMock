@@ -116,7 +116,10 @@ const SliderTwo: React.FC<Props> = ({
 	]);
 	const settings = getSetting(setting.method, setting.animation);
 	return (
-		<div id="slider-two">
+		<div
+			id="slider-two"
+			className={slideInformation.slideSeen === 0 ? 'remove_arrow' : ''}
+		>
 			<Slider {...settings}>
 				{ComponentProps.map((component: React.ReactNode, index: number) => (
 					<div key={'slider-two' + index}>{component}</div>
