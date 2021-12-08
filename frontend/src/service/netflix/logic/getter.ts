@@ -18,7 +18,6 @@ const getNewPage = async (infosFetchTest: TInfosFetchTest) => {
 		);
 	}
 };
-//todo: finish function
 const getVideoUrl = async (id: number | string): Promise<string> => {
 	try {
 		const result = await serverGetApi(

@@ -10,11 +10,7 @@ import {
 	TNetflixListMoviesReturned,
 	TWishListMovies,
 } from '../type';
-import {
-	INFOS_PAGE_NETFLIX,
-	LIST_OF_WISHES_CATEGORIES_MOVIES,
-	PROTOTYPE,
-} from '../constant';
+import { LIST_OF_WISHES_CATEGORIES_MOVIES, PROTOTYPE } from '../constant';
 
 // Those which are imported from home are those who the admin cannot update from his pannel.
 const initialState = { ...resultTemplate, pending: false };
@@ -57,12 +53,13 @@ export const getNewPageNetFlix = createAsyncThunk(
 	'dataNetflix/getPage',
 	async (infosPage: TInfosPage): Promise<any | false> => {
 		try {
-			console.log('reducer getNewPageNetFlix');
 			const { path, page } = infosPage;
+			console.log(path, page);
 			const newPage = await serverGetApi(
 				URL_ADDRESSES.api.netflix.data(path, `&page=${page}`),
 				null,
 			);
+			console.log(newPage);
 			const pagePayload = {
 				path,
 				newPage,
@@ -101,7 +98,6 @@ const data = createSlice({
 				// Add user to the state array
 				state.state = true;
 				state.data = action.payload;
-				// todelete: console.log(action.payload, 'ACTION PAYLOAD');
 			},
 		);
 		builder.addCase(fetchDataNetflix.rejected, (state) => {
@@ -120,6 +116,7 @@ const data = createSlice({
 				state.data.map((element: TNetflixListMoviesReturned) => {
 					if (element.path === path && newPage.state) {
 						const { results } = newPage.data;
+						console.log(results);
 						element.result.data.results =
 							element.result.data.results.concat(results);
 						element.result.data.page = newPage.data.page;

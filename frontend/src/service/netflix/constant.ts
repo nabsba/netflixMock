@@ -8,31 +8,28 @@ const LIST_OF_WISHES_CATEGORIES_MOVIES: TWishListMovies[] = [
 	},
 	{
 		title: 'Our guest',
-		path: 'discover/movie',
+		path: 'tv/airing_today',
 	},
+	// {
+	// 	title: 'Top 10 in the uk',
+	// 	path: 'movie/latest',
+	// },
 	{
-		title: 'Top 10 in the uk',
-		path: 'movie/popular',
-		extraFilter: '&sort_by=popularity.asc',
-	},
-	{
-		title: 'popular on Netflix',
-		path: 'discover/movie',
+		title: 'Now playing',
+		path: 'movie/now_playing',
 		extraFilter:
 			'&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=1&with_watch_monetization_types=flatrate',
 	},
 	{
-		title: 'Actions movies',
-		path: 'discover/movie',
-		extraFilter: '&with_genres=action',
+		title: 'Top rated',
+		path: 'movie/top_rated',
+		extraFilter: '&sort_by=popularity.desc',
 	},
 ];
-
 const INFOS_PAGE_NETFLIX: TInfosPage = {
 	INDICE_TO_TRIGGER_NEW_PAGE: 5,
 	NUMBER_OF_ITEMS_IN_PAGE: 20,
 };
-
 const PROTOTYPE = {
 	PAGE: (): TNetflixMovie[] => {
 		const page = [];
@@ -52,6 +49,7 @@ const PROTOTYPE = {
 			video: true,
 			vote_average: 1,
 			vote_count: 1,
+			name: 'movie',
 		};
 
 		for (let i = 0; i < INFOS_PAGE_NETFLIX.NUMBER_OF_ITEMS_IN_PAGE; i++) {
@@ -61,4 +59,19 @@ const PROTOTYPE = {
 		return page;
 	},
 };
-export { LIST_OF_WISHES_CATEGORIES_MOVIES, INFOS_PAGE_NETFLIX, PROTOTYPE };
+const IMAGE_SIZE = {
+	original: 'original',
+	small: 'w500',
+};
+
+const VIDEO_PLAYER = {
+	typeConfiguration: 'youtube',
+	type: 'netflix',
+};
+export {
+	LIST_OF_WISHES_CATEGORIES_MOVIES,
+	INFOS_PAGE_NETFLIX,
+	PROTOTYPE,
+	IMAGE_SIZE,
+	VIDEO_PLAYER,
+};
