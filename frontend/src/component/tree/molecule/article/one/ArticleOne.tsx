@@ -9,7 +9,7 @@ type Props = {
 
 const ArticleOne: React.FC<Props> = ({ data: { h2, paragraph } }) => {
 	return (
-		<div>
+		<div id="ArticleOne">
 			<H2 title={h2.title} />
 			<Paragraph data={paragraph} />
 		</div>
