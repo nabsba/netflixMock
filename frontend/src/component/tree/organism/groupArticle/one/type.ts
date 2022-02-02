@@ -1,4 +1,3 @@
-import { Result } from './../../../../../Common/type/type';
 import { TArticleTwo } from '../../../molecule';
 
 type TGroupArticleOne = {
@@ -8,6 +7,6 @@ type TGroupArticleOne = {
 
 export type TListArticle = {
 	title: string;
-	allArticleMovie: TArticleTwo[];
+	allArticles: TArticleTwo[];
 };
 export default TGroupArticleOne;

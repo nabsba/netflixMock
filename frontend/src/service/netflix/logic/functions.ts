@@ -21,7 +21,7 @@ const appendDataToArticleTwoNetflixData = (
 			if (!list) return;
 			const articleTwoCompletedWithDataFromAPI: TListArticle = {
 				title,
-				allArticleMovie: list.map((movie: TNetflixMovie) => {
+				allArticles: list.map((movie: TNetflixMovie) => {
 					return {
 						...articleTwo,
 						minorInformationVideo: {

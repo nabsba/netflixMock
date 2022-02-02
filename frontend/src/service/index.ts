@@ -2,7 +2,7 @@ import { getBrowserInfo, updateInfoDevice } from './browserInfo/reducer';
 import { TBrowserInfo } from './browserInfo/type';
 import { APIS } from './Common/constant';
 import {
-	completeArticleTwoWithDataReceived,
+	appendDataToArticleTwo,
 	doWeRequireANewPage,
 	getNewPage,
 	getPrototypeDuringPending,
@@ -36,7 +36,7 @@ export {
 	initGroupArticleWithNetflixData,
 	getVideoUrl,
 	APIS,
-	completeArticleTwoWithDataReceived,
+	appendDataToArticleTwo,
 	doWeRequireANewPage,
 	getPrototypeDuringPending,
 	INFOS_PAGE_NETFLIX,

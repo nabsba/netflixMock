@@ -5,7 +5,7 @@ import { appendDataToArticleTwoNetflixData } from '../../netflix/logic/functions
 import { getVideoUrl } from '../../netflix/logic/getter';
 import { INFOS_PAGE_DEFAULT } from '../constant';
 
-const completeArticleTwoWithDataReceived = (
+const appendDataToArticleTwo = (
 	type: string,
 	data: [],
 	articleTwo: TArticleTwo,
@@ -40,7 +40,7 @@ const doWeRequireANewPage = (
 	const result = isEndOfPage && !isUserSlideBack;
 	return result;
 };
-const getPrototypeDuringPending = (type: string) => {
+const getPrototypeDuringPending = (type: string): any => {
 	switch (type) {
 		case 'netflix':
 			return PROTOTYPE.PAGE();
@@ -48,7 +48,7 @@ const getPrototypeDuringPending = (type: string) => {
 			return [];
 	}
 };
-const getNewPage = async (type: string) => {
+const getNewPage = async (type: string): Promise<any> => {
 	try {
 		switch (type) {
 			case 'netflix':
@@ -81,7 +81,7 @@ const getUrlForVideo = async (
 };
 
 export {
-	completeArticleTwoWithDataReceived,
+	appendDataToArticleTwo,
 	doWeRequireANewPage,
 	getNewPage,
 	getPrototypeDuringPending,
