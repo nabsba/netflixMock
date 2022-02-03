@@ -6,29 +6,18 @@
 
 .article_two {
 	width: 30vw;
-	transition: transform 0.4s;
 	display: flex;
 	flex-direction: column;
 	border-radius: var(--border-radius);
 	/*todo: mettre ca que pour le premier article_two et mettre le contraire pour le dernier */
-	transform-origin: bottom left;
 	vertical-align: top;
 	padding-left: 0.3rem;
 	padding-right: 0.3rem;
-	height:max-content;
-}
-
-@media (min-width: 750px) {
-	.article_two {
-		width: 15.5vw;
-	}
+	height: max-content;
 }
 
 .article_two:hover {
 	cursor: pointer;
-	transform: scale(1.5);
-	transition: transform 0.4s;
-	transform-origin: bottom left;
 }
 
 
@@ -52,12 +41,13 @@
 }
 
 .article_two_part_one #image-container {
-height:100%;
-} 
+	height: 100%;
+}
 
 .article_two_part_one_icon_ #image-container {
-	height:1rem;
+	height: 1rem;
 }
+
 .article_two_part_one img {
 	height: 100%;
 	width: 100%;
@@ -72,13 +62,6 @@ height:100%;
 	left: 80%;
 	transform: translate(-50%, -50%);
 
-}
-
-@media (min-width: 900px) {
-	.article_two_video_player_volume_icon svg {
-		height: 1.5rem;
-		width: 1.5rem;
-	}
 }
 
 .article_two_part_two {
@@ -98,13 +81,6 @@ height:100%;
 
 .group_icons_wrapper {
 	flex-wrap: wrap;
-}
-
-@media (min-width: 1700px) {
-	.group_icons_wrapper svg {
-		height: 1.5rem;
-		width: 1.5rem;
-	}
 }
 
 .group_icons_wrapper svg:hover {
@@ -150,12 +126,6 @@ height:100%;
 	/* added */
 }
 
-.article_two:hover {
-	z-index: 1;
-	transition: all 200ms ease-in;
-	transform: scale(1.5);
-}
-
 .article_two_part_one {
 	height: var(--share-height);
 	width: 100%;
@@ -171,4 +141,51 @@ height:100%;
 .article_two_part_one:hover .article_two_part_two {
 	min-height: 20px;
 
+}
+
+
+@media (min-width: 480px) {
+	.article_two {
+		transition: transform 0.4s;
+		transform-origin: center;
+	}
+
+	.article_two:hover {
+		transform: scale(1.5);
+		z-index: 1;
+		transition: all 200ms ease-in;
+		transform: scale(1.5);
+	}
+
+	.slick-track>.slick-active .article_two:hover {
+		transform-origin: left;
+	}
+
+	.slick-track>.slick-active~.slick-active .article_two:hover {
+		transform-origin: center;
+	}
+
+	.last_slide .article_two:hover {
+		transform-origin: right !important;
+	}
+}
+
+@media (min-width: 750px) {
+	.article_two {
+		width: 15.5vw;
+	}
+}
+
+@media (min-width: 900px) {
+	.article_two_video_player_volume_icon svg {
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+}
+
+@media (min-width: 1700px) {
+	.group_icons_wrapper svg {
+		height: 1.5rem;
+		width: 1.5rem;
+	}
 }

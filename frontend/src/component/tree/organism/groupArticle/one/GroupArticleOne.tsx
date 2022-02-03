@@ -27,11 +27,22 @@ const GroupArticleOne: React.FC<Props> = ({ data: { articleTwo, data } }) => {
 			setListArticleTwo(listArticleTwo);
 		}
 	}, [data, articleTwo]);
-	const handleMouseEnter = (identification: string) =>
+
+	const addClassesForSliders = (event: any) => {
+		const currentDiv = event.currentTarget as HTMLElement;
+		const getArticles = currentDiv.getElementsByClassName('slick-active');
+		const articlesLength = getArticles.length;
+		getArticles[articlesLength - 1].classList.add('last_slide');
+	};
+	const handleMouseClick = (event: any) => addClassesForSliders(event);
+
+	const handleMouseEnter = (identification: string, event: any) => {
+		addClassesForSliders(event);
 		setMouseEnter({
 			state: true,
 			identification,
 		});
+	};
 
 	const displayAllArticlesFromTheList = (listArticle: TArticleTwo[]) => {
 		const articles: React.ReactNode[] = [];
@@ -49,7 +60,6 @@ const GroupArticleOne: React.FC<Props> = ({ data: { articleTwo, data } }) => {
 				/>,
 			);
 		});
-
 		return (
 			<SliderTwo
 				data={{
@@ -70,7 +80,8 @@ const GroupArticleOne: React.FC<Props> = ({ data: { articleTwo, data } }) => {
 			<div
 				className="group_article_one_sub_main"
 				key={listArticle.title}
-				onMouseEnter={() => handleMouseEnter(listArticle.title)}
+				onMouseEnter={(event) => handleMouseEnter(listArticle.title, event)}
+				onClick={handleMouseClick}
 				style={{
 					zIndex:
 						isMouseEnter.state &&
