@@ -15,6 +15,7 @@
 	vertical-align: top;
 	padding-left: 0.3rem;
 	padding-right: 0.3rem;
+	height:max-content;
 }
 
 @media (min-width: 750px) {
@@ -141,7 +142,7 @@ height:100%;
 	display: inline-block;
 	position: relative;
 	border: 0;
-	height: var(--share-height);
+	height: max-content;
 	width: 100%;
 	/* transition: all 200ms ease-in;
 	transform: scale(1);

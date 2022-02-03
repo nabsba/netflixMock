@@ -13,6 +13,10 @@ type Props = {
 
 const GroupArticleOne: React.FC<Props> = ({ data: { articleTwo, data } }) => {
 	const [listArticleTwo, setListArticleTwo] = useState<any[]>([]);
+	const [isMouseEnter, setMouseEnter] = useState({
+		state: true,
+		identification: '',
+	});
 	useEffect(() => {
 		if (data && data.length > 0 && articleTwo.type) {
 			const listArticleTwo = appendDataToArticleTwo(
@@ -23,6 +27,11 @@ const GroupArticleOne: React.FC<Props> = ({ data: { articleTwo, data } }) => {
 			setListArticleTwo(listArticleTwo);
 		}
 	}, [data, articleTwo]);
+	const handleMouseEnter = (identification: string) =>
+		setMouseEnter({
+			state: true,
+			identification,
+		});
 
 	const displayAllArticlesFromTheList = (listArticle: TArticleTwo[]) => {
 		const articles: React.ReactNode[] = [];
@@ -57,8 +66,19 @@ const GroupArticleOne: React.FC<Props> = ({ data: { articleTwo, data } }) => {
 		);
 	};
 	const displayListWishes = () =>
-		listArticleTwo.map((listArticle: TListArticle) => (
-			<div className="group_article_one_sub_main" key={listArticle.title}>
+		listArticleTwo.map((listArticle: TListArticle, index: number) => (
+			<div
+				className="group_article_one_sub_main"
+				key={listArticle.title}
+				onMouseEnter={() => handleMouseEnter(listArticle.title)}
+				style={{
+					zIndex:
+						isMouseEnter.state &&
+						isMouseEnter.identification === listArticle.title
+							? '10'
+							: '0',
+				}}
+			>
 				<H3 title={listArticle.title} />
 				<div className="group_article_one_sub_main_articles_wrapper">
 					{displayAllArticlesFromTheList(listArticle.allArticles)}
