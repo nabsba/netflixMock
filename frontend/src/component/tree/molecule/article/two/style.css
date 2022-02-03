@@ -170,12 +170,6 @@
 	}
 }
 
-@media (min-width: 750px) {
-	.article_two {
-		width: 15.5vw;
-	}
-}
-
 @media (min-width: 900px) {
 	.article_two_video_player_volume_icon svg {
 		height: 1.5rem;
