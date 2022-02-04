@@ -1,9 +1,5 @@
 @import '../../../../common/css/variable.css';
 
-:root {
-	--share-height: 10rem;
-}
-
 .article_two {
 	width: 30vw;
 	display: flex;
@@ -120,10 +116,6 @@
 	border: 0;
 	height: max-content;
 	width: 100%;
-	/* transition: all 200ms ease-in;
-	transform: scale(1);
-	vertical-align: top; */
-	/* added */
 }
 
 .article_two_part_one {
@@ -151,10 +143,9 @@
 	}
 
 	.article_two:hover {
-		transform: scale(1.5);
+		transform: var(--scale);
 		z-index: 1;
 		transition: all 200ms ease-in;
-		transform: scale(1.5);
 	}
 
 	.slick-track>.slick-active .article_two:hover {
