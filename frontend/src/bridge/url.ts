@@ -5,7 +5,10 @@
 import { IMAGE_SIZE } from '../service';
 
 // do not forget to write: npx json-server db.json --routes routes.json
-const URL_ADDRESS = 'http://localhost:3000';
+// const URL_ADDRESS = 'http://localhost:3000';
+// Heroku
+const URL_ADDRESS = `https://netflixmock.herokuapp.com`;
+
 
 const URL_ADDRESSES: {
 	default: string;
