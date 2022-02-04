@@ -55,13 +55,18 @@ const ArticleTwo: React.FC<Props> = ({
 				<ImageAsComponent data={imagePresentation} />
 				{IsArticleOnHover && (
 					<div className="article_two_video_player">
-						{videoUrl && <VideoPlayer data={videoPlayer} />}
-						<div
-							className="article_two_video_player_volume_icon icon_with_a_circle_around"
-							onClick={() => setIsVolumeUp(!isVolumeUp)}
-						>
-							{isVolumeUp ? iconVolume[0] : iconVolume[1]}
-						</div>
+						{videoUrl && (
+							<>
+								{' '}
+								<VideoPlayer data={videoPlayer} />{' '}
+								<div
+									className="article_two_video_player_volume_icon icon_with_a_circle_around"
+									onClick={() => setIsVolumeUp(!isVolumeUp)}
+								>
+									{isVolumeUp ? iconVolume[0] : iconVolume[1]}
+								</div>{' '}
+							</>
+						)}
 					</div>
 				)}
 				<div className="article_two_part_one_icon_">{icon}</div>
