@@ -157,13 +157,18 @@
 		]
 	},
 	"scripts": {
-		"start": "webpack serve --config webpack.dev.config.ts",
-		"build": "webpack --config webpack.prod.config.ts",
-		"serve": "serve -s ./build -l 9000",
+		"heroku-postbuild": "cd frontend && webpack --config webpack.prod.config.ts && cd ../backend/apis/netflix && yarn",
+		"start": "node backend/apis/netflix/dist/app.js",
+		"prod": "cd frontend && webpack --config webpack.prod.config.ts",
+		"dev": " cd frontend && webpack serve --config webpack.dev.config.ts",
+		"serve": "cd frontend && serve -s ./build -l 9000",
 		"lint": "yarn eslint",
 		"lint:fix": "yarn eslint src --fix",
 		"format": "prettier --write src",
 		"test": "jest -u"
+	},
+		"engines": {
+		"node": "16.13.0"
 	},
 	"browserslist": [
 		">0.2%",
