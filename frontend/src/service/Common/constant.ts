@@ -1,8 +1,7 @@
 import { IMAGE_SIZE } from '../netflix/constant';
-import { TInfosPage } from './type';
 
 const APIS = ['netflix'];
-const INFOS_PAGE_DEFAULT: TInfosPage = {
+const INFOS_PAGE_DEFAULT = {
 	INDICE_TO_TRIGGER_NEW_PAGE: 5,
 	NUMBER_OF_ITEMS_IN_PAGE: 20,
 };
@@ -13,14 +12,17 @@ const ERROR_MESSAGE: { [key: string]: string } = {
 	_500: 'Internal Server Error',
 };
 
-// Local server
-// const URL_ADDRESS = 'https://localhost:3001';
-// fake api server
+// Reminder: each times we make a change in the .env we have to recompile the app. However, to avoid this on dev we can change it here directly...
 
-// do not forget to write: npx json-server db.json --routes routes.json
-// const URL_ADDRESS = 'http://localhost:3000';
-// Heroku
-const URL_ADDRESS = `https://netflixmock.herokuapp.com`;
+const URL_ADDRESS: { [key: string]: string } = {
+	LOCAL: 'http://localhost:3001',
+	LOCAL_HTTPS: 'https://localhost:3001',
+	HEROKU: 'https://netflix-mock.herokuapp.com',
+	CENTOS: 'www.yourname.com',
+	// Reminder: active the self api, write: npx json-server db.json --routes routes.json
+	SELF_API: 'http://localhost:3000',
+	NAMECHEAP: 'www.yourname.com',
+};
 
 const URL_ADDRESSES: {
 	default: string;
@@ -39,14 +41,15 @@ const URL_ADDRESSES: {
 	};
 	media: { [key: string]: string };
 } = {
-	default: URL_ADDRESS,
+	default: URL_ADDRESS[process.env.HOST ? process.env.HOST : 'LOCAL'],
 	api: {
-		googlePlace: `${URL_ADDRESS}/api/googlePlace`,
+		googlePlace: `${
+			URL_ADDRESS[process.env.HOST ? process.env.HOST : 'LOCAL']
+		}/api/googlePlace`,
 		netflix: {
 			data: (wish: string, extraFilter = '') =>
 				`https://api.themoviedb.org/3/${wish}?api_key=${process.env.REACT_APP_NETFLIX_KEY}${extraFilter}`,
 			image: (id: number | string, size = IMAGE_SIZE.small, extraFilter) =>
-				// `https://image.tmdb.org/t/p/original${id}${
 				`https://image.tmdb.org/t/p/${size}${id}${
 					extraFilter ? extraFilter : ''
 				}`,

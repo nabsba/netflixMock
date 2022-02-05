@@ -142,10 +142,11 @@ const config: webpack.Configuration = {
 		// Heroku variables must be predefined here.
 		new webpack.DefinePlugin({
 			'process.env': {
-				NODE_ENV: JSON.stringify('production'),
+				DEVELOPMENT: JSON.stringify(process.env.DEVELOPMENT),
 				REACT_APP_NETFLIX_KEY: JSON.stringify(
 					process.env.REACT_APP_NETFLIX_KEY,
 				),
+				HOST: JSON.stringify(process.env.HOST),
 			},
 		}),
 		// Local: create .env and add yours variables.
