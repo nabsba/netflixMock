@@ -1,4 +1,5 @@
-import { serverGetApi, URL_ADDRESSES } from '../../../bridge';
+import { URL_ADDRESSES } from '../../Common/constant';
+import { serverGetApi } from '../../Common/logic/requestServer';
 import { TInfosFetchTest } from '../type';
 
 const getNewPage = async (infosFetchTest: TInfosFetchTest) => {

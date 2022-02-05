@@ -3,8 +3,8 @@ import * as dataBackup from '../datas/backup/data.json';
 import { header, footer } from '../datas/datasCommon';
 import { arcturus, errorBundaryFallbackType } from '../../home/data';
 import { TNetflixMovie } from '../../../netflix/type';
-import { URL_ADDRESSES } from '../../../../bridge';
 import { IMAGE_SIZE, randomIntFromInterval, VIDEO_PLAYER } from '../../..';
+import { URL_ADDRESSES } from '../../../Common/constant';
 
 // Those which are imported from home are those who the admin cannot update from his pannel.
 const initialState = {

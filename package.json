@@ -162,9 +162,9 @@
 		"prod": "cd frontend && webpack --config webpack.prod.config.ts",
 		"dev": " cd frontend && webpack serve --config webpack.dev.config.ts",
 		"serve": "cd frontend && serve -s ./build -l 9000",
-		"lint": "yarn eslint",
-		"lint:fix": "yarn eslint src --fix",
-		"format": "prettier --write src",
+		"lint": "cd frontend && yarn eslint",
+		"lint:fix": "cd frontend && yarn eslint ./frontend/src --fix",
+		"format": " cd frontend && prettier --write src",
 		"test": "jest -u"
 	},
 		"engines": {

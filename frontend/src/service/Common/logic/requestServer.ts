@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import axios from 'axios';
-import { Result } from '../../Common/type/type';
+import { Result } from '../type';
 
 const resultTemplate: Result = {
 	state: false,
@@ -44,7 +44,7 @@ const serverGetApi = async (
 		});
 	} catch (error) {
 		console.log(
-			'file: bridge/requestServer, method: serverGet, error: ',
+			'file: service/Common/requestServer, method: serverGet, error: ',
 			error,
 		);
 		result.serverError = true;
@@ -73,7 +73,7 @@ const serverGet = async (
 		});
 	} catch (error) {
 		console.log(
-			'file: bridge/requestServer, method: serverGet, error: ',
+			'file: service/Common/requestServer, method: serverGet, error: ',
 			error,
 		);
 		result.serverError = true;
@@ -96,7 +96,7 @@ const serverPost = async (
 		result = await axios.post(url, body, { timeout: time ? time : 15000 });
 	} catch (error) {
 		console.log(
-			'file: bridge/requestServer, method: serverPost, error: ',
+			'file: service/Common/requestServer, method: serverPost, error: ',
 			error,
 		);
 		result.serverError = true;

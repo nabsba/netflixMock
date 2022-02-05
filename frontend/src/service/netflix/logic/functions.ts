@@ -1,6 +1,6 @@
-import { URL_ADDRESSES } from '../../../bridge';
 import { TArticleTwo } from '../../../component/tree/molecule';
 import { TListArticle } from '../../../component/tree/organism';
+import { URL_ADDRESSES } from '../../Common/constant';
 import { IMAGE_SIZE } from '../constant';
 import { TNetflixListMoviesReturned, TNetflixMovie } from '../type';
 

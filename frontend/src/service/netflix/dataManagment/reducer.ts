@@ -1,9 +1,5 @@
-import { createAsyncThunk, createSlice, current } from '@reduxjs/toolkit';
-import {
-	resultTemplate,
-	serverGetApi,
-} from '../../../bridge/common/requestServer';
-import URL_ADDRESSES from '../../../bridge/url';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { resultTemplate, serverGetApi } from '../../Common/logic/requestServer';
 import {
 	TDataNetflix,
 	TInfosPage,
@@ -11,6 +7,7 @@ import {
 	TWishListMovies,
 } from '../type';
 import { LIST_OF_WISHES_CATEGORIES_MOVIES, PROTOTYPE } from '../constant';
+import { URL_ADDRESSES } from '../../Common/constant';
 
 // Those which are imported from home are those who the admin cannot update from his pannel.
 const initialState = { ...resultTemplate, pending: false };
