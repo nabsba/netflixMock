@@ -18,7 +18,7 @@ const arcturus = {
 			type: 'netflix',
 		},
 		data: null,
-		type: 'movies',
+		type: 'netflix',
 	},
 };
 const errorBundaryFallbackType: TErrorBundaryFallbackType = {

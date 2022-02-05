@@ -5,5 +5,5 @@ import * as icons from './image/icons';
 const img: any = {
 	icons,
 };
-const getImg = (category: string, name: string) => img[category][name];
+const getImg = (category: string, name: string): any => img[category][name];
 export default getImg;

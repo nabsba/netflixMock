@@ -1,14 +1,8 @@
-import { TDataNetflix } from '../../../../service/netflix/type';
-import { TArticleTwo } from '../../molecule';
+import TGroupArticleOne from '../../organism/groupArticle/one/type';
 
-// type TArcturus = {
-// 	articleTwo: TArticleTwo;
-// };
 type TArcturus = {
 	type: string;
-	groupArticleOne: {
-		articleTwo: TArticleTwo;
-		data: TDataNetflix;
-	};
+	groupArticleOne: TGroupArticleOne;
 };
+
 export default TArcturus;

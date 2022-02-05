@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { APIS, appendDataToArticleTwo } from '../../../../../service';
+import { APIS } from '../../../../../service/Common/constant';
+import { appendDataToArticleTwo } from '../../../../../service/Common/logic/functions';
 import { H3 } from '../../../atom';
 import { TArticleTwo } from '../../../molecule';
 import ArticleTwo from '../../../molecule/article/two/ArticleTwo';
@@ -10,8 +11,9 @@ import TGroupArticleOne, { TListArticle } from './type';
 type Props = {
 	data: TGroupArticleOne;
 };
-
-const GroupArticleOne: React.FC<Props> = ({ data: { articleTwo, data } }) => {
+const GroupArticleOne: React.FC<Props> = ({
+	data: { articleTwo, data, type },
+}) => {
 	const [listArticleTwo, setListArticleTwo] = useState<any[]>([]);
 	const [isMouseEnter, setMouseEnter] = useState({
 		state: true,
@@ -68,15 +70,14 @@ const GroupArticleOne: React.FC<Props> = ({ data: { articleTwo, data } }) => {
 						method: 'responsive',
 						animation: false,
 					},
-					// todo: remove hardcoding
-					type: 'netflix',
+					type,
 					path: path,
 				}}
 			/>
 		);
 	};
 	const displayListWishes = () =>
-		listArticleTwo.map((listArticle: TListArticle, index: number) => (
+		listArticleTwo.map((listArticle: TListArticle) => (
 			<div
 				className="group_article_one_sub_main"
 				key={listArticle.title}
@@ -98,4 +99,5 @@ const GroupArticleOne: React.FC<Props> = ({ data: { articleTwo, data } }) => {
 		));
 	return <div className="group_article_one">{displayListWishes()}</div>;
 };
+
 export default GroupArticleOne;

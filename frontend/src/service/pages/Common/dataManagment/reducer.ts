@@ -3,8 +3,9 @@ import * as dataBackup from '../datas/backup/data.json';
 import { header, footer } from '../datas/datasCommon';
 import { arcturus, errorBundaryFallbackType } from '../../home/data';
 import { TNetflixMovie } from '../../../netflix/type';
-import { IMAGE_SIZE, randomIntFromInterval, VIDEO_PLAYER } from '../../..';
 import { URL_ADDRESSES } from '../../../Common/constant';
+import { randomIntFromInterval } from '../../../Common/tools/functions';
+import { IMAGE_SIZE, VIDEO_PLAYER } from '../../../netflix/constant';
 
 // Those which are imported from home are those who the admin cannot update from his pannel.
 const initialState = {
@@ -61,7 +62,7 @@ const data = createSlice({
 				};
 			}
 		},
-		polulateDataPagesWithApiData: (state, action) => {
+		polulateDataPagesWithApiData: () => {
 			console.log('action');
 		},
 	},

@@ -2,6 +2,7 @@ import { TArticleTwo } from '../../../molecule';
 
 type TGroupArticleOne = {
 	articleTwo: TArticleTwo;
+	type: string;
 	data?: any;
 };
 

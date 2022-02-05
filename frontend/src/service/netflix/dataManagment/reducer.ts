@@ -51,12 +51,10 @@ export const getNewPageNetFlix = createAsyncThunk(
 	async (infosPage: TInfosPage): Promise<any | false> => {
 		try {
 			const { path, page } = infosPage;
-			console.log(path, page);
 			const newPage = await serverGetApi(
 				URL_ADDRESSES.api.netflix.data(path, `&page=${page}`),
 				null,
 			);
-			console.log(newPage);
 			const pagePayload = {
 				path,
 				newPage,
@@ -121,12 +119,9 @@ const data = createSlice({
 				});
 			},
 		);
-		builder.addCase(getNewPageNetFlix.rejected, (state) => {
+		builder.addCase(getNewPageNetFlix.rejected, () => {
 			console.log('error');
 		});
-		// builder.addCase(getNewPageNetFlix.pending, (state) => {
-
-		// });
 	},
 });
 const dataNetflix = data.reducer;

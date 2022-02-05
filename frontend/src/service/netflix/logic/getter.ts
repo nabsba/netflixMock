@@ -2,7 +2,8 @@ import { URL_ADDRESSES } from '../../Common/constant';
 import { serverGetApi } from '../../Common/logic/requestServer';
 import { TInfosFetchTest } from '../type';
 
-const getNewPage = async (infosFetchTest: TInfosFetchTest) => {
+//todo: Functions weaks. No typing return, no error handling
+const getNewPage = async (infosFetchTest: TInfosFetchTest): Promise<any> => {
 	try {
 		const newPage = await serverGetApi(
 			URL_ADDRESSES.api.netflix.data(

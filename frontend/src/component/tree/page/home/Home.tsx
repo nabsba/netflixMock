@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
-import {
-	initGroupArticleWithNetflixData,
-	TReducers,
-} from '../../../../service';
+import { TReducers } from '../../../../service';
 import { useDispatch, useSelector } from 'react-redux';
 import { Arcturus, Header } from '../../template';
 import Footer from '../../template/footer/Footer';
 import { NetflixLoader } from '../../molecule';
 import { ErrorBoundary } from 'react-error-boundary';
 import ErrorBoundaryFallback from '../../../specialCase/error/errorBundary/ErrorBoundaryFallback';
+import { initGroupArticleWithNetflixData } from '../../../../service/pages/Common/dataManagment/reducer';
 
 const Home: React.FC = () => {
 	const [loader, setLoader] = useState(true);
