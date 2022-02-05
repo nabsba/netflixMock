@@ -1,7 +1,9 @@
 {
-	"name": "template",
+	"name": "netflix",
 	"version": "0.0.1",
-	"description": "",
+	"description": "Mock netflix first page",
+  "license": "MIT",
+	"author": "nabil",
 	"keywords": [],
 	"main": "./src/index.tsx",
 	"dependencies": {
