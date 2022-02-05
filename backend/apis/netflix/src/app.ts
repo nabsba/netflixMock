@@ -9,6 +9,7 @@ import path from 'path';
 import { createServer } from 'http';
 import https from 'https';
 import fs from 'fs';
+import { PORTS } from './model/Common';
 // yarn add socket.io --save
 
 //Config
@@ -37,9 +38,7 @@ app.use('*', function (req, res) {
   res.sendFile(path.join(__dirname, '../../../../frontend/build/', 'index.html'));
 });
 
-// const PORT = process.env.DEVELOPMENT === 'true' ? 3001 : null; // => local : namecheap web hosted
-const PORT = process.env.PORT || 80; // => heroku
-// const PORT = '8080'; // => Centos
+const PORT = process.env.HOST_PORT ? PORTS[process.env.HOST_PORT] : null;
 
 const httpsServer =
   process.env.HTTPS_LOCAL === 'true' && process.env.DEVELOPMENT === 'true'
@@ -48,5 +47,5 @@ const httpsServer =
 
 httpsServer.listen(PORT, () => {
   // eslint-disable-next-line no-console
-  console.log('server started on port' + PORT);
+  console.log('server started on port ' + PORT);
 });
