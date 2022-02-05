@@ -1,4 +1,4 @@
-@import'../../../common/css/variable.css';
+@import '../../../common/css/variable.css';
 .header {
 	position: relative;
 	min-height: 60vh;
@@ -11,11 +11,11 @@
 	z-index: -10;
 }
 .header_description_icon_and_title img {
-	height:2rem;
+	height: 2rem;
 }
 .header_description_icon_and_title h3 {
-	padding-left: .5rem;
-	color:var(	--color-2);
+	padding-left: 0.5rem;
+	color: var(--color-2);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
@@ -40,17 +40,17 @@
 	padding-left: var(--main-space);
 	position: relative;
 
-	transition: transform .5s;
+	transition: transform 0.5s;
 }
-@media only screen and (min-width: 750px), screen and (min-height: 900px) { 
+@media only screen and (min-width: 750px), screen and (min-height: 900px) {
 	.header {
-		height:60rem;
+		height: 60rem;
 		min-height: unset !important;
 	}
 }
 @media only screen and (min-width: 750px) {
 	.header_description {
-	transform: scale(1.1);
+		transform: scale(1.1);
 		width: 40vw;
 	}
 }
@@ -84,12 +84,12 @@
 }
 
 .header #video-player {
-	position:absolute;
-	height:100%;
-	width:100%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
 }
 .shrunk_header_description {
-	transform:scale(.8);
-	transition: all .5s 1s;
+	transform: scale(0.8);
+	transition: all 0.5s 1s;
 	transform-origin: bottom left;
 }

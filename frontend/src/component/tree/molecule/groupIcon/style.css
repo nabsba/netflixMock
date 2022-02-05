@@ -15,5 +15,5 @@
 	color: var(--color-3_1);
 }
 .article_two_video_player svg {
-		transform: rotate(0deg);
+	transform: rotate(0deg);
 }

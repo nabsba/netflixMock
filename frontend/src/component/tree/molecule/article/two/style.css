@@ -16,7 +16,6 @@
 	cursor: pointer;
 }
 
-
 .group_icons_wrapper_part_one,
 .group_icons_wrapper_part_two {
 	height: 100%;
@@ -57,7 +56,6 @@
 	top: 60%;
 	left: 80%;
 	transform: translate(-50%, -50%);
-
 }
 
 .article_two_part_two {
@@ -132,9 +130,7 @@
 
 .article_two_part_one:hover .article_two_part_two {
 	min-height: 20px;
-
 }
-
 
 @media (min-width: 480px) {
 	.article_two {
@@ -148,11 +144,11 @@
 		transition: all 200ms ease-in;
 	}
 
-	.slick-track>.slick-active .article_two:hover {
+	.slick-track > .slick-active .article_two:hover {
 		transform-origin: left;
 	}
 
-	.slick-track>.slick-active~.slick-active .article_two:hover {
+	.slick-track > .slick-active ~ .slick-active .article_two:hover {
 		transform-origin: center;
 	}
 

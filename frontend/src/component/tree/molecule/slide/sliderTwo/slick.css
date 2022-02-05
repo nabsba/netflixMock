@@ -1,4 +1,4 @@
-@import'../../../../common/css/variable.css';
+@import '../../../../common/css/variable.css';
 
 /* Slider */
 .slick-slider {
@@ -113,7 +113,6 @@
 .slick-arrow.slick-hidden {
 	display: none;
 }
-
 
 .slick-track {
 	height: var(--share-height);

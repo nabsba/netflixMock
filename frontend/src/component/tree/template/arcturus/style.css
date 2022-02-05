@@ -1,14 +1,13 @@
-@import'../../../common/css/variable.css';
-#arcturus{
+@import '../../../common/css/variable.css';
+#arcturus {
 	padding-left: var(--main-space);
-	padding-right:var(--main-space);
+	padding-right: var(--main-space);
 }
-
 
 @media screen and (min-width: 900px) {
-.navigation {
-    height: 68px;
-    padding-left: Calc(var(--main-space) * 3);
-    padding-right: Calc(var(--main-space) * 3);
-}
+	.navigation {
+		height: 68px;
+		padding-left: Calc(var(--main-space) * 3);
+		padding-right: Calc(var(--main-space) * 3);
+	}
 }

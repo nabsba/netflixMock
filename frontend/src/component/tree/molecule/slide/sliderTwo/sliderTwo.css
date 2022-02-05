@@ -1,4 +1,4 @@
-@import'../../../../common/css/variable.css';
+@import '../../../../common/css/variable.css';
 
 .slick-slider button {
 	display: none;
@@ -8,7 +8,11 @@
 }
 
 .slick-slider button:hover {
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 90%, rgba(0, 0, 0, 0)) !important;
+	background-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.3) 90%,
+		rgba(0, 0, 0, 0)
+	) !important;
 }
 
 .slick-next:before,
@@ -19,11 +23,11 @@
 .slick-dots,
 .slick-next,
 .slick-prev {
-	right: calc(var(--main-space)* -1) !important;
+	right: calc(var(--main-space) * -1) !important;
 }
 
 .slick-prev {
-	left: calc(var(--main-space)* -1) !important;
+	left: calc(var(--main-space) * -1) !important;
 }
 
 .slick-next.slick-disabled:before,
@@ -38,16 +42,13 @@
 }
 
 @media screen and (min-width: 900px) {
-
 	.slick-dots,
 	.slick-next,
 	.slick-prev {
 		right: Calc(var(--main-space) * -3);
-
 	}
-
 }
 
-.remove_arrow .slick-slider .slick-prev{
+.remove_arrow .slick-slider .slick-prev {
 	display: none !important;
 }
