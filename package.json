@@ -1,8 +1,8 @@
 {
 	"name": "netflix",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Mock netflix first page",
-  "license": "MIT",
+	"license": "MIT",
 	"author": "nabil",
 	"keywords": [],
 	"main": "./src/index.tsx",
@@ -172,7 +172,7 @@
 		"format": " cd frontend && prettier --write src",
 		"test": "jest -u"
 	},
-		"engines": {
+	"engines": {
 		"node": "16.13.0"
 	},
 	"browserslist": [
