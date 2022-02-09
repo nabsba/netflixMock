@@ -9,7 +9,6 @@ import {
 import { LIST_OF_WISHES_CATEGORIES_MOVIES, PROTOTYPE } from '../constant';
 import { URL_ADDRESSES } from '../../Common/constant';
 
-// Those which are imported from home are those who the admin cannot update from his pannel.
 const initialState = { ...resultTemplate, pending: false };
 
 //https://developers.themoviedb.org/3/discover/movie-discover
@@ -45,7 +44,6 @@ export const fetchDataNetflix = createAsyncThunk(
 		}
 	},
 );
-
 export const getNewPageNetFlix = createAsyncThunk(
 	'dataNetflix/getPage',
 	async (infosPage: TInfosPage): Promise<any | false> => {
@@ -111,7 +109,6 @@ const data = createSlice({
 				state.data.map((element: TNetflixListMoviesReturned) => {
 					if (element.path === path && newPage.state) {
 						const { results } = newPage.data;
-						console.log(results);
 						element.result.data.results =
 							element.result.data.results.concat(results);
 						element.result.data.page = newPage.data.page;
