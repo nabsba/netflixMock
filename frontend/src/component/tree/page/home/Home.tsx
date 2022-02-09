@@ -7,13 +7,12 @@ import Footer from '../../template/footer/Footer';
 import { NetflixLoader } from '../../molecule';
 import { ErrorBoundary } from 'react-error-boundary';
 import ErrorBoundaryFallback from '../../../specialCase/error/errorBundary/ErrorBoundaryFallback';
-import { initGroupArticleWithNetflixData } from '../../../../service/pages/Common/dataManagment/reducer';
+import { updatePageWithDatasReceivedFromTheAPI } from '../../../../service/pages/Common/dataManagment/reducer';
 
 const Home: React.FC = () => {
 	const [loader, setLoader] = useState(true);
 	const dispatch = useDispatch();
 	const {
-		//todo: make sure you have a backup for dataNetflix
 		dataNetflix,
 		dataPages: {
 			home: { header, arcturus, footer, errorBundaryFallbackType },
@@ -22,9 +21,9 @@ const Home: React.FC = () => {
 	useEffect(() => {
 		if (dataNetflix.state && dataNetflix.data) {
 			setLoader(false);
-			dispatch(initGroupArticleWithNetflixData(dataNetflix));
+			dispatch(updatePageWithDatasReceivedFromTheAPI(dataNetflix));
 		}
-	}, [dataNetflix, dispatch]);
+	}, [dataNetflix, dispatch, header.videoPlayer.name]);
 	return (
 		<div id="home-page">
 			<ErrorBoundary

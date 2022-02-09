@@ -22,10 +22,14 @@ const data = createSlice({
 	initialState,
 	reducers: {
 		getDatasPages: (state) => state,
-		initGroupArticleWithNetflixData: (state, action) => {
+		updatePageWithDatasReceivedFromTheAPI: (state, action) => {
 			const { payload } = action;
 			state.home.arcturus.groupArticleOne.data = payload.data;
-			if (payload.data && payload.data.length > 0) {
+			if (
+				payload.data &&
+				payload.data.length > 0 &&
+				!state.home.header.videoPlayer.name
+			) {
 				const randomList: number = Math.round(
 					randomIntFromInterval(0, payload.data.length - 1),
 				);
@@ -68,7 +72,7 @@ const data = createSlice({
 	},
 });
 const dataPages = data.reducer;
-const { getDatasPages, initGroupArticleWithNetflixData } = data.actions;
+const { getDatasPages, updatePageWithDatasReceivedFromTheAPI } = data.actions;
 
 export default dataPages;
-export { dataBackup, getDatasPages, initGroupArticleWithNetflixData };
+export { dataBackup, getDatasPages, updatePageWithDatasReceivedFromTheAPI };

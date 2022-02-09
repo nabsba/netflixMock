@@ -22,7 +22,7 @@ import { getVideoUrl } from './netflix/logic/getter';
 import {
 	dataBackup,
 	getDatasPages,
-	initGroupArticleWithNetflixData,
+	updatePageWithDatasReceivedFromTheAPI,
 } from './pages/Common/dataManagment/reducer';
 import TDataPages from './pages/Common/dataManagment/type';
 
@@ -33,7 +33,7 @@ export {
 	getBrowserInfo,
 	dataBackup,
 	getDatasPages,
-	initGroupArticleWithNetflixData,
+	updatePageWithDatasReceivedFromTheAPI,
 	getVideoUrl,
 	APIS,
 	appendDataToArticleTwo,
