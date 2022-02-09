@@ -1,6 +1,6 @@
 # 🚀  Netflix Mock 🚀 
 
-This repo houses the assets used to build the 'Netflix mock' website (first page) with some features of it.
+This repo houses the assets used to build the '[**Netflix mock**](https://netflix-mock.herokuapp.com)' website (first page) with some features of it.
 
 ## Technologies 
 
