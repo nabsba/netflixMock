@@ -6,6 +6,7 @@
 #loader-netflix div {
 	margin: auto;
 	height: 10rem;
+	background-color:transparent ;
 }
 #loader-netflix div img {
 	height: 100%;

@@ -34,8 +34,10 @@
 	cursor: pointer;
 }
 
-.navigation_href_netflix_wrapper {
+.navigation  .loader_image {
 	display: flex;
+	background-color: transparent !important;
+display:none
 }
 
 .navigation_href_netflix_wrapper a {
