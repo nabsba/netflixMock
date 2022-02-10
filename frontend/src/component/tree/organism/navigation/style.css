@@ -36,6 +36,7 @@
 
 .navigation_href_netflix_wrapper {
 	display: flex;
+		background-color: transparent;
 }
 
 .navigation_href_netflix_wrapper a {
